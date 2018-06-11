@@ -2,7 +2,7 @@
 
 'use strict'
 
-const HlPgClient = require('hl-pg-client')
+const HlPgClient = require('@wmfs/hl-pg-client')
 const startTelepods = require('./../lib')
 const process = require('process')
 const chai = require('chai')
