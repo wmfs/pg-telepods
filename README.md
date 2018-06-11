@@ -1,5 +1,14 @@
 # pg-telepods
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/wmfs/tymly/blob/master/packages/pg-telepods/LICENSE)
+[![Tymly Package](https://img.shields.io/badge/tymly-package-blue.svg)](https://tymly.io/)
+[![npm (scoped)](https://img.shields.io/npm/v/@wmfs/pg-telepods.svg)](https://www.npmjs.com/package/@wmfs/pg-telepods)
+[![Build Status](https://travis-ci.org/wmfs/pg-telepods.svg?branch=master)](https://travis-ci.org/wmfs/pg-telepods)
+[![codecov](https://codecov.io/gh/wmfs/pg-telepods/branch/master/graph/badge.svg)](https://codecov.io/gh/wmfs/pg-telepods)
+[![CodeFactor](https://www.codefactor.io/repository/github/wmfs/pg-telepods/badge)](https://www.codefactor.io/repository/github/wmfs/pg-telepods)
+[![Dependabot badge](https://img.shields.io/badge/Dependabot-active-brightgreen.svg)](https://dependabot.com/)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/wmfs/tymly/blob/master/packages/pg-concat/LICENSE)
+
 
 
 
