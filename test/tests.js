@@ -97,6 +97,9 @@ describe('whole-table test',
       it('check for deletes csv', () => {
         const censusDeletes = path.resolve(__dirname, './output/deletes/census.csv')
         expect(fs.existsSync(censusDeletes)).to.equal(true)
+
+        const deletes = fs.readFileSync(censusDeletes, { encoding: 'utf-8' })
+        expect(deletes.split('\n').length).to.equal(7)
       })
     })
 
