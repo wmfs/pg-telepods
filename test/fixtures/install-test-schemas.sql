@@ -3,7 +3,6 @@ DROP SCHEMA IF EXISTS government CASCADE;
 
 CREATE SCHEMA springfield;
 
-
 CREATE TABLE springfield.people (
   hash_sum text NOT NULL,
   social_security_id integer NOT NULL,
@@ -19,18 +18,35 @@ INSERT INTO springfield.people (hash_sum, social_security_id, first_name, last_n
 ('EEEEEEEE', 5, 'Montgomery', 'Burns', 123),
 ('11111111', 6, 'Ned', 'Flanders', 60);
 
+CREATE SCHEMA worldof;
+
+CREATE TABLE worldof.tomorrow (
+  hash_sum text NOT NULL,
+  space_id integer NOT NULL,
+  name text NOT NULL
+);
+
+INSERT INTO worldof.tomorrow (hash_sum, space_id, name) VALUES
+('ABCDEFGH', 20, 'Philip J. Fry'),
+('DEFGHIJK', 21, 'Leela'),
+('GHIJKLMN', 22, 'Professor Farnsworth'),
+('JKLMNOPQ', 27, 'Bender');
+
 CREATE SCHEMA government;
 
 CREATE TABLE government.census (
   origin_hash_sum text NOT NULL,
-  social_security_id integer NOT NULL,
+  id_number integer NOT NULL,
   name text NOT NULL,
   town text,
-  CONSTRAINT government_census_pkey PRIMARY KEY (social_security_id)
+  CONSTRAINT government_census_pkey PRIMARY KEY (id_number)
 );
 
-INSERT INTO government.census (origin_hash_sum, social_security_id, name, town) VALUES
+INSERT INTO government.census (origin_hash_sum, id_number, name, town) VALUES
 ('CCCCCCCC', 3, 'Arnie Pie', 'Springfield'),
 ('DDDDDDDD', 4, 'Seymor Skinner', 'Springfield'),
 ('EEEEEEEE', 5, 'Montgomery Burns', 'Springfield'),
-('00000000', 6, 'Nedward Flanders', 'Springfield');
+('00000000', 6, 'Nedward Flanders', 'Springfield'),
+('ABCDEFGH', 20, 'Phillip Fry', 'New New York'),
+('DEFGHIJK', 21, 'Leela', 'New New York'),
+('ZZZZZZZZ', 38, 'Doctor Zoidburg', 'New New York');

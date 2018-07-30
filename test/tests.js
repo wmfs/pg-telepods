@@ -10,7 +10,7 @@ const expect = chai.expect
 const path = require('path')
 const fs = require('fs')
 
-describe('Run the basic-usage example',
+describe('whole-table test',
   function () {
     this.timeout(process.env.TIMEOUT || 5000)
     let client
@@ -46,12 +46,12 @@ describe('Run the basic-usage example',
             hashSumColumnName: 'origin_hash_sum'
           },
           join: {
-            'social_security_id': 'social_security_id' // key = source table column, value = target table column
+            'social_security_id': 'id_number' // key = source table column, value = target table column
           },
           transformFunction: function (sourceRow, callback) {
             callback(null, {
-              'socialSecurityId': sourceRow.socialSecurityId,
-              'name': sourceRow.firstName + ' ' + sourceRow.lastName,
+              'id_number': sourceRow.socialSecurityId,
+              'name': `${sourceRow.firstName} ${sourceRow.lastName}`,
               'town': 'Springfield'
             })
           }
@@ -61,32 +61,32 @@ describe('Run the basic-usage example',
 
       it('verify modified children rows', async () => {
         const result = await client.query(
-          'select social_security_id, origin_hash_sum, name, town from government.census order by social_security_id'
+          'select id_number, origin_hash_sum, name, town from government.census order by id_number'
         )
         expect(result.rows).to.eql(
           [
             {
               'name': 'Homer Simpson',
               'origin_hash_sum': 'AAAAAAAA',
-              'social_security_id': 1,
+              'id_number': 1,
               'town': 'Springfield'
             },
             {
               'name': 'Marge Simpson',
               'origin_hash_sum': 'BBBBBBBB',
-              'social_security_id': 2,
+              'id_number': 2,
               'town': 'Springfield'
             },
             {
               'name': 'Montgomery Burns',
               'origin_hash_sum': 'EEEEEEEE',
-              'social_security_id': 5,
+              'id_number': 5,
               'town': 'Springfield'
             },
             {
               'name': 'Ned Flanders',
               'origin_hash_sum': '11111111',
-              'social_security_id': 6,
+              'id_number': 6,
               'town': 'Springfield'
             }
           ]
