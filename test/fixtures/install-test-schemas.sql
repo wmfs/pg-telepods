@@ -23,7 +23,8 @@ CREATE SCHEMA worldof;
 CREATE TABLE worldof.tomorrow (
   hash_sum text NOT NULL,
   space_id integer NOT NULL,
-  name text NOT NULL
+  name text NOT NULL,
+  CONSTRAINT worldof_tomorrow_pkey PRIMARY KEY (space_id)
 );
 
 INSERT INTO worldof.tomorrow (hash_sum, space_id, name) VALUES

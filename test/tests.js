@@ -63,6 +63,7 @@ describe('whole-table test',
         const result = await client.query(
           'select id_number, origin_hash_sum, name, town from government.census order by id_number'
         )
+        expect(result).to.not.equal(null)
         expect(result.rows).to.eql(
           [
             {
@@ -91,7 +92,6 @@ describe('whole-table test',
             }
           ]
         )
-        expect(result).to.not.equal(null)
       })
 
       it('check for deletes csv', () => {
