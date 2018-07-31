@@ -28,10 +28,11 @@ CREATE TABLE worldof.tomorrow (
 );
 
 INSERT INTO worldof.tomorrow (hash_sum, space_id, name) VALUES
-('ABCDEFGH', 20, 'Philip J. Fry'),
+('ABCDEFGQ', 20, 'Philip J. Fry'),
 ('DEFGHIJK', 21, 'Leela'),
 ('GHIJKLMN', 22, 'Professor Farnsworth'),
-('JKLMNOPQ', 27, 'Bender');
+('AAAAAAAA', 27, 'Bender'); -- clashing hash_sum with people table
+
 
 CREATE SCHEMA government;
 

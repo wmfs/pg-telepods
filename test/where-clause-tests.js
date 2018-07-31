@@ -18,6 +18,17 @@ describe('where clause generation', () => {
       expected: 'WHERE age = 10'
     },
     {
+      label: 'equals true',
+      where: { flowers: { equals: true } },
+      expected: 'WHERE flowers = true'
+    },
+    {
+      label: 'equals escaped string',
+      where: { town: { equals: 'Spr\\ngfield' } },
+      expected: 'WHERE source.town = E\'Sprin\\gfield\'',
+      tableName: 'source'
+    },
+    {
       label: 'equals O\'Reilly',
       where: { surname: { equals: 'O\'Reilly' } },
       expected: 'WHERE surname = \'O\'\'Reilly\''

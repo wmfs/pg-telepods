@@ -32,11 +32,14 @@ describe('partial-table test',
       })
     })
 
+    const firstSyncOutputDir = path.resolve(__dirname, './output', 'first-partial')
+    const secondSyncOutputDir = path.resolve(__dirname, './output', 'second-partial')
+
     describe('sync first table', () => {
       it('start the telepods', async () => {
         const result = await startTelepods({
           client: client,
-          outputDir: path.resolve(__dirname, './output'),
+          outputDir: firstSyncOutputDir,
           source: {
             tableName: 'springfield.people',
             hashSumColumnName: 'hash_sum'
@@ -45,7 +48,7 @@ describe('partial-table test',
             tableName: 'government.census',
             hashSumColumnName: 'origin_hash_sum',
             where: {
-              town: {equals: 'Springfield'}
+              town: { equals: 'Springfield' }
             }
           },
           join: {
@@ -116,7 +119,7 @@ describe('partial-table test',
       })
 
       it('check for deletes csv', () => {
-        const censusDeletes = path.resolve(__dirname, './output/deletes/census.csv')
+        const censusDeletes = path.resolve(firstSyncOutputDir, 'deletes', 'census.csv')
         expect(fs.existsSync(censusDeletes)).to.equal(true)
 
         const deletes = fs.readFileSync(censusDeletes, { encoding: 'utf-8' })
@@ -128,7 +131,7 @@ describe('partial-table test',
       it('start the telepods', async () => {
         const result = await startTelepods({
           client: client,
-          outputDir: path.resolve(__dirname, './output'),
+          outputDir: secondSyncOutputDir,
           source: {
             tableName: 'worldof.tomorrow',
             hashSumColumnName: 'hash_sum'
@@ -187,7 +190,7 @@ describe('partial-table test',
             },
             {
               'name': 'Philip J. Fry',
-              'origin_hash_sum': 'ABCDEFGH',
+              'origin_hash_sum': 'ABCDEFGQ',
               'id_number': 20,
               'town': 'New New York'
             },
@@ -205,7 +208,7 @@ describe('partial-table test',
             },
             {
               'name': 'Bender',
-              'origin_hash_sum': 'JKLMNOPQ',
+              'origin_hash_sum': 'AAAAAAAA',
               'id_number': 27,
               'town': 'New New York'
             }
@@ -214,11 +217,11 @@ describe('partial-table test',
       })
 
       it('check for deletes csv', () => {
-        const censusDeletes = path.resolve(__dirname, './output/deletes/census.csv')
+        const censusDeletes = path.resolve(secondSyncOutputDir, 'deletes', 'census.csv')
         expect(fs.existsSync(censusDeletes)).to.equal(true)
 
         const deletes = fs.readFileSync(censusDeletes, { encoding: 'utf-8' })
-        expect(deletes.split('\n').length).to.equal(1)
+        expect(deletes.split('\n').length).to.equal(3)
       })
     })
 

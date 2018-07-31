@@ -32,11 +32,13 @@ describe('whole-table test',
       })
     })
 
+    const firstSyncOutputDir = path.resolve(__dirname, './output', 'full-table')
+
     describe('test', () => {
       it('start the telepods', async () => {
         const result = await startTelepods({
           client: client,
-          outputDir: path.resolve(__dirname, './output'),
+          outputDir: firstSyncOutputDir,
           source: {
             tableName: 'springfield.people',
             hashSumColumnName: 'hash_sum'
@@ -95,7 +97,7 @@ describe('whole-table test',
       })
 
       it('check for deletes csv', () => {
-        const censusDeletes = path.resolve(__dirname, './output/deletes/census.csv')
+        const censusDeletes = path.resolve(firstSyncOutputDir, 'deletes', 'census.csv')
         expect(fs.existsSync(censusDeletes)).to.equal(true)
 
         const deletes = fs.readFileSync(censusDeletes, { encoding: 'utf-8' })
