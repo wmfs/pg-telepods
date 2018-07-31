@@ -10,7 +10,7 @@ const expect = chai.expect
 const path = require('path')
 const fs = require('fs')
 
-xdescribe('partial-table test',
+describe('partial-table test',
   function () {
     this.timeout(process.env.TIMEOUT || 5000)
     let client
