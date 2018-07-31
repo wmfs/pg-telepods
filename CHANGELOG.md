@@ -1,3 +1,21 @@
+# [1.4.0](https://github.com/wmfs/pg-telepods/compare/v1.3.0...v1.4.0) (2018-07-31)
+
+
+### ✨ Features
+
+* Can sync to a subset of the target table ([feecd55](https://github.com/wmfs/pg-telepods/commit/feecd55))
+
+
+### 🚨 Tests
+
+* Correct E string test ([8c9f8ab](https://github.com/wmfs/pg-telepods/commit/8c9f8ab))
+* Define generate-where-clause ([93f3e10](https://github.com/wmfs/pg-telepods/commit/93f3e10))
+
+
+### 🗑 Reverts
+
+* Reenable partial-table tests ([2f4624b](https://github.com/wmfs/pg-telepods/commit/2f4624b))
+
 # [1.3.0](https://github.com/wmfs/pg-telepods/compare/v1.2.0...v1.3.0) (2018-07-31)
 
 
