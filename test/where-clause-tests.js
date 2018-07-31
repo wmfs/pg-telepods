@@ -24,8 +24,8 @@ describe('where clause generation', () => {
     },
     {
       label: 'equals escaped string',
-      where: { town: { equals: 'Spr\\ngfield' } },
-      expected: 'WHERE source.town = E\'Sprin\\gfield\'',
+      where: { town: { equals: 'Spri\\ngfield' } },
+      expected: 'WHERE source.town = E\'Spri\\\\ngfield\'',
       tableName: 'source'
     },
     {
