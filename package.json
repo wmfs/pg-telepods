@@ -29,7 +29,7 @@
     "pg": "7.4.3",
     "pg-copy-streams": "1.2.0",
     "pg-query-stream": "1.1.1",
-    "@wmfs/supercopy": "1.0.2"
+    "@wmfs/supercopy": "1.1.0"
   },
   "devDependencies": {
     "chai": "4.1.2",
