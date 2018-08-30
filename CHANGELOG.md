@@ -1,3 +1,26 @@
+# [1.5.0](https://github.com/wmfs/pg-telepods/compare/v1.4.0...v1.5.0) (2018-08-30)
+
+
+### 🛠 Builds
+
+* **deps:** update csv-string requirement from 3.1.3 to 3.1.5 ([2ea4122](https://github.com/wmfs/pg-telepods/commit/2ea4122))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement from 7.0.1 to 7.0.2 ([c5415cb](https://github.com/wmfs/pg-telepods/commit/c5415cb))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement from 7.0.2 to 7.0.3 ([65e3153](https://github.com/wmfs/pg-telepods/commit/65e3153))
+* **deps-dev:** update nyc requirement from 12.0.2 to 13.0.1 ([dd2f3a9](https://github.com/wmfs/pg-telepods/commit/dd2f3a9))
+* **deps-dev:** update semantic-release requirement from 15.9.11 to 15.9.12 ([416fea8](https://github.com/wmfs/pg-telepods/commit/416fea8))
+* **deps-dev:** update semantic-release requirement from 15.9.3 to 15.9.5 ([69ad9e9](https://github.com/wmfs/pg-telepods/commit/69ad9e9))
+* **deps-dev:** update semantic-release requirement from 15.9.5 to 15.9.6 ([e9c58de](https://github.com/wmfs/pg-telepods/commit/e9c58de))
+* **deps-dev:** update semantic-release requirement from 15.9.6 to 15.9.7 ([32bd4f7](https://github.com/wmfs/pg-telepods/commit/32bd4f7))
+* **deps-dev:** update semantic-release requirement from 15.9.7 to 15.9.8 ([1e3d96d](https://github.com/wmfs/pg-telepods/commit/1e3d96d))
+* **deps-dev:** update semantic-release requirement from 15.9.8 to 15.9.9 ([0ec0367](https://github.com/wmfs/pg-telepods/commit/0ec0367))
+* **deps-dev:** update semantic-release requirement from 15.9.9 to 15.9.11 ([ef57e63](https://github.com/wmfs/pg-telepods/commit/ef57e63))
+* **deps-dev:** update semantic-release requirement to 15.9.3 ([145390c](https://github.com/wmfs/pg-telepods/commit/145390c))
+
+
+### ♻️ Chores
+
+* codecov 3.0.3 -> 3.0.4 ([c1a1e5b](https://github.com/wmfs/pg-telepods/commit/c1a1e5b))
+
 # [1.4.0](https://github.com/wmfs/pg-telepods/compare/v1.3.0...v1.4.0) (2018-07-31)
 
 
