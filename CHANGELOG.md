@@ -1,3 +1,11 @@
+# [1.7.0](https://github.com/wmfs/pg-telepods/compare/v1.6.0...v1.7.0) (2018-09-04)
+
+
+### 🛠 Builds
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/supercopy requirement from 1.1.0 to 1.2.0 ([8640c71](https://github.com/wmfs/pg-telepods/commit/8640c71))
+* **deps-dev:** update codecov requirement from 3.0.4 to 3.1.0 ([de19344](https://github.com/wmfs/pg-telepods/commit/de19344))
+
 # [1.6.0](https://github.com/wmfs/pg-telepods/compare/v1.5.0...v1.6.0) (2018-08-30)
 
 
