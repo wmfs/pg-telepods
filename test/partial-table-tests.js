@@ -140,7 +140,7 @@ describe('partial-table test',
             tableName: 'government.census',
             hashSumColumnName: 'origin_hash_sum',
             where: {
-              town: {equals: 'New New York'}
+              town: { equals: 'New New York' }
             }
           },
           join: {
