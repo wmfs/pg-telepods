@@ -1,3 +1,12 @@
+# [1.12.0](https://github.com/wmfs/pg-telepods/compare/v1.11.0...v1.12.0) (2018-09-11)
+
+
+### 🛠 Builds
+
+* **deps:** update debug requirement from 3.2.4 to 4.0.0 ([8edee3d](https://github.com/wmfs/pg-telepods/commit/8edee3d))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([c0a5d00](https://github.com/wmfs/pg-telepods/commit/c0a5d00))
+* **deps-dev:** update semantic-release requirement ([56aeafa](https://github.com/wmfs/pg-telepods/commit/56aeafa))
+
 # [1.11.0](https://github.com/wmfs/pg-telepods/compare/v1.10.0...v1.11.0) (2018-09-11)
 
 
