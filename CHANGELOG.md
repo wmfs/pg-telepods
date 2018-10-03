@@ -1,3 +1,12 @@
+# [1.16.0](https://github.com/wmfs/pg-telepods/compare/v1.15.0...v1.16.0) (2018-10-03)
+
+
+### 🛠 Builds
+
+* **deps:** update pg requirement from 7.4.3 to 7.5.0 ([ae59ce6](https://github.com/wmfs/pg-telepods/commit/ae59ce6))
+* **deps-dev:** update chai requirement from 4.1.2 to 4.2.0 ([f0af05f](https://github.com/wmfs/pg-telepods/commit/f0af05f))
+* **deps-dev:** update semantic-release requirement ([ca017e8](https://github.com/wmfs/pg-telepods/commit/ca017e8))
+
 # [1.15.0](https://github.com/wmfs/pg-telepods/compare/v1.14.0...v1.15.0) (2018-09-12)
 
 
