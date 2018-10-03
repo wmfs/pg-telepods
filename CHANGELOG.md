@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/wmfs/pg-telepods/compare/v1.16.0...v1.17.0) (2018-10-03)
+
+
+### 🛠 Builds
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/supercopy requirement from 1.6.0 to 1.7.0 ([0f9253a](https://github.com/wmfs/pg-telepods/commit/0f9253a))
+
 # [1.16.0](https://github.com/wmfs/pg-telepods/compare/v1.15.0...v1.16.0) (2018-10-03)
 
 
