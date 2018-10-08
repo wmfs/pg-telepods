@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/wmfs/pg-telepods/compare/v1.18.0...v1.19.0) (2018-10-08)
+
+
+### 🛠 Builds
+
+* **deps:** update debug requirement from 4.0.1 to 4.1.0 ([86c226f](https://github.com/wmfs/pg-telepods/commit/86c226f))
+
 # [1.18.0](https://github.com/wmfs/pg-telepods/compare/v1.17.0...v1.18.0) (2018-10-08)
 
 
