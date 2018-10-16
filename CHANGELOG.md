@@ -1,3 +1,11 @@
+# [1.21.0](https://github.com/wmfs/pg-telepods/compare/v1.20.0...v1.21.0) (2018-10-16)
+
+
+### 🛠 Builds
+
+* **deps:** update camelcase-keys requirement from 4.2.0 to 5.0.0 ([358c64b](https://github.com/wmfs/pg-telepods/commit/358c64b))
+* **deps-dev:** update nyc requirement from 13.0.1 to 13.1.0 ([0f1d740](https://github.com/wmfs/pg-telepods/commit/0f1d740))
+
 # [1.20.0](https://github.com/wmfs/pg-telepods/compare/v1.19.0...v1.20.0) (2018-10-08)
 
 
