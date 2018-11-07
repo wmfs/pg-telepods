@@ -1,3 +1,11 @@
+# [1.27.0](https://github.com/wmfs/pg-telepods/compare/v1.26.0...v1.27.0) (2018-11-07)
+
+
+### 🛠 Builds
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/supercopy requirement from 1.11.0 to 1.12.0 ([acac60d](https://github.com/wmfs/pg-telepods/commit/acac60d))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/hl-pg-client requirement ([431b475](https://github.com/wmfs/pg-telepods/commit/431b475))
+
 # [1.26.0](https://github.com/wmfs/pg-telepods/compare/v1.25.0...v1.26.0) (2018-11-07)
 
 
