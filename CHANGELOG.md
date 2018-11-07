@@ -1,3 +1,11 @@
+# [1.26.0](https://github.com/wmfs/pg-telepods/compare/v1.25.0...v1.26.0) (2018-11-07)
+
+
+### 🛠 Builds
+
+* **deps:** update pg requirement from 7.6.0 to 7.6.1 ([9213266](https://github.com/wmfs/pg-telepods/commit/9213266))
+* **deps-dev:** update semantic-release requirement ([4201d8c](https://github.com/wmfs/pg-telepods/commit/4201d8c))
+
 # [1.25.0](https://github.com/wmfs/pg-telepods/compare/v1.24.0...v1.25.0) (2018-11-03)
 
 
