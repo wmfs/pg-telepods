@@ -1,3 +1,18 @@
+## [1.27.1](https://github.com/wmfs/pg-telepods/compare/v1.27.0...v1.27.1) (2018-11-30)
+
+
+### 🐛 Bug Fixes
+
+* Ensure upserts are completed before continuing ([214feda](https://github.com/wmfs/pg-telepods/commit/214feda))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update semantic-release requirement ([3993e58](https://github.com/wmfs/pg-telepods/commit/3993e58))
+* **deps-dev:** update semantic-release requirement ([313762f](https://github.com/wmfs/pg-telepods/commit/313762f))
+* **deps-dev:** update semantic-release requirement ([b748673](https://github.com/wmfs/pg-telepods/commit/b748673))
+* **deps-dev:** update semantic-release requirement ([a77eeca](https://github.com/wmfs/pg-telepods/commit/a77eeca))
+
 # [1.27.0](https://github.com/wmfs/pg-telepods/compare/v1.26.0...v1.27.0) (2018-11-07)
 
 
