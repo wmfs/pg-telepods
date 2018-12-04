@@ -1,3 +1,10 @@
+# [1.28.0](https://github.com/wmfs/pg-telepods/compare/v1.27.1...v1.28.0) (2018-12-04)
+
+
+### 🛠 Builds
+
+* **deps:** update pg requirement from 7.6.1 to 7.7.1 ([e1d24fa](https://github.com/wmfs/pg-telepods/commit/e1d24fa))
+
 ## [1.27.1](https://github.com/wmfs/pg-telepods/compare/v1.27.0...v1.27.1) (2018-11-30)
 
 
