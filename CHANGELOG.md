@@ -1,3 +1,12 @@
+# [1.30.0](https://github.com/wmfs/pg-telepods/compare/v1.29.0...v1.30.0) (2019-06-27)
+
+
+### 🛠 Builds
+
+* **deps:** Update pg-query-stream requirement from 1.1.2 to 2.0.0 ([d4a1b9e](https://github.com/wmfs/pg-telepods/commit/d4a1b9e))
+* **deps-dev:** Update [@semantic-release](https://github.com/semantic-release)/git requirement ([c04979d](https://github.com/wmfs/pg-telepods/commit/c04979d))
+* **deps-dev:** Update semantic-release requirement ([104e361](https://github.com/wmfs/pg-telepods/commit/104e361))
+
 # [1.29.0](https://github.com/wmfs/pg-telepods/compare/v1.28.0...v1.29.0) (2019-01-08)
 
 
