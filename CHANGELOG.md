@@ -1,3 +1,11 @@
+# [1.32.0](https://github.com/wmfs/pg-telepods/compare/v1.31.0...v1.32.0) (2019-06-28)
+
+
+### 🛠 Builds
+
+* **deps:** Update csv-string requirement from 3.1.5 to 3.1.6 ([456040b](https://github.com/wmfs/pg-telepods/commit/456040b))
+* **deps-dev:** Update [@semantic-release](https://github.com/semantic-release)/git requirement ([0973ac1](https://github.com/wmfs/pg-telepods/commit/0973ac1))
+
 # [1.31.0](https://github.com/wmfs/pg-telepods/compare/v1.30.0...v1.31.0) (2019-06-27)
 
 
