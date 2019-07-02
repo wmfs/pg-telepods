@@ -1,3 +1,11 @@
+# [1.33.0](https://github.com/wmfs/pg-telepods/compare/v1.32.0...v1.33.0) (2019-07-02)
+
+
+### 🛠 Builds
+
+* **deps:** Update pg requirement from 7.7.1 to 7.11.0 ([565bc55](https://github.com/wmfs/pg-telepods/commit/565bc55))
+* **deps-dev:** Update mocha requirement from 5.2.0 to 6.1.4 ([f8661fd](https://github.com/wmfs/pg-telepods/commit/f8661fd))
+
 # [1.32.0](https://github.com/wmfs/pg-telepods/compare/v1.31.0...v1.32.0) (2019-06-28)
 
 
