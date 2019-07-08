@@ -1,7 +1,7 @@
 # pg-telepods
 [![Tymly Package](https://img.shields.io/badge/tymly-package-blue.svg)](https://tymly.io/)
 [![npm (scoped)](https://img.shields.io/npm/v/@wmfs/pg-telepods.svg)](https://www.npmjs.com/package/@wmfs/pg-telepods)
-[![Build Status](https://travis-ci.org/wmfs/pg-telepods.svg?branch=master)](https://travis-ci.org/wmfs/pg-telepods)
+[![CircleCI](https://circleci.com/gh/wmfs/pg-telepods.svg?style=svg)](https://circleci.com/gh/wmfs/pg-telepods)
 [![codecov](https://codecov.io/gh/wmfs/pg-telepods/branch/master/graph/badge.svg)](https://codecov.io/gh/wmfs/pg-telepods)
 [![CodeFactor](https://www.codefactor.io/repository/github/wmfs/pg-telepods/badge)](https://www.codefactor.io/repository/github/wmfs/pg-telepods)
 [![Dependabot badge](https://img.shields.io/badge/Dependabot-active-brightgreen.svg)](https://dependabot.com/)
