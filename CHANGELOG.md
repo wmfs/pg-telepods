@@ -1,3 +1,22 @@
+# [1.34.0](https://github.com/wmfs/pg-telepods/compare/v1.33.0...v1.34.0) (2019-07-11)
+
+
+### 🛠 Builds
+
+* **deps:** Update lodash requirement from 4.17.11 to 4.17.14 ([3ff8b13](https://github.com/wmfs/pg-telepods/commit/3ff8b13))
+* **deps-dev:** Update codecov requirement from 3.1.0 to 3.5.0 ([e89ba11](https://github.com/wmfs/pg-telepods/commit/e89ba11))
+* **deps-dev:** Update nyc requirement from 13.1.0 to 14.1.1 ([b83e2cc](https://github.com/wmfs/pg-telepods/commit/b83e2cc))
+
+
+### 📚 Documentation
+
+* Add CircleCI badge ([8f8180d](https://github.com/wmfs/pg-telepods/commit/8f8180d))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** Add CircleCI config ([09488ab](https://github.com/wmfs/pg-telepods/commit/09488ab))
+
 # [1.33.0](https://github.com/wmfs/pg-telepods/compare/v1.32.0...v1.33.0) (2019-07-02)
 
 
