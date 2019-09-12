@@ -24,7 +24,7 @@
     "camelcase-keys": "5.0.0",
     "csv-string": "3.1.6",
     "debug": "4.1.1",
-    "lodash": "4.17.14",
+    "lodash": "4.17.15",
     "make-dir": "3.0.0",
     "pg": "7.11.0",
     "pg-copy-streams": "1.2.0",
