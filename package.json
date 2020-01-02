@@ -22,7 +22,7 @@
   "main": "./lib/index.js",
   "dependencies": {
     "camelcase-keys": "5.0.0",
-    "csv-string": "3.1.6",
+    "csv-string": "3.1.7",
     "debug": "4.1.1",
     "lodash": "4.17.15",
     "make-dir": "3.0.0",
