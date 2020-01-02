@@ -1,3 +1,12 @@
+# [1.35.0](https://github.com/wmfs/pg-telepods/compare/v1.34.0...v1.35.0) (2020-01-02)
+
+
+### 🛠 Builds
+
+* **deps:** Update lodash requirement from 4.17.14 to 4.17.15 ([ee34ac3](https://github.com/wmfs/pg-telepods/commit/ee34ac31823595ffc7ddc0f9eddc7f324cb79bda))
+* **deps-dev:** bump packages ([7d3105e](https://github.com/wmfs/pg-telepods/commit/7d3105e803e517466dcf25cec18ad501b944afe2))
+* **deps-dev:** update dev dependancies ([2d974af](https://github.com/wmfs/pg-telepods/commit/2d974af8330063ceb3d9becc6e3be00da081ff98))
+
 # [1.34.0](https://github.com/wmfs/pg-telepods/compare/v1.33.0...v1.34.0) (2019-07-11)
 
 
