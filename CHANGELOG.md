@@ -1,3 +1,10 @@
+# [1.37.0](https://github.com/wmfs/pg-telepods/compare/v1.36.0...v1.37.0) (2020-01-02)
+
+
+### 🛠 Builds
+
+* **deps:** Bump csv-string from 3.1.6 to 3.1.7 ([83b0336](https://github.com/wmfs/pg-telepods/commit/83b033680b93b75b98a354db780c72a8149e21e7))
+
 # [1.36.0](https://github.com/wmfs/pg-telepods/compare/v1.35.0...v1.36.0) (2020-01-02)
 
 
