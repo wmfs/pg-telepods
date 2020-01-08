@@ -1,3 +1,10 @@
+# [1.41.0](https://github.com/wmfs/pg-telepods/compare/v1.40.0...v1.41.0) (2020-01-08)
+
+
+### 🛠 Builds
+
+* **deps:** Update pg-copy-streams requirement from 1.2.0 to 2.2.2 ([b5d1277](https://github.com/wmfs/pg-telepods/commit/b5d12770471eae7e253a451447a437f3b52e2fdc))
+
 # [1.40.0](https://github.com/wmfs/pg-telepods/compare/v1.39.0...v1.40.0) (2020-01-08)
 
 
