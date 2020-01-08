@@ -1,3 +1,12 @@
+# [1.39.0](https://github.com/wmfs/pg-telepods/compare/v1.38.0...v1.39.0) (2020-01-08)
+
+
+### 🛠 Builds
+
+* **deps:** Bump camelcase-keys from 5.0.0 to 6.1.1 ([dd62295](https://github.com/wmfs/pg-telepods/commit/dd62295de7a25aa8c1ac5fb83f41a8e81e3dd4e9))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.13.0 to 1.14.0 ([fc842d3](https://github.com/wmfs/pg-telepods/commit/fc842d3f107040895f553fd2e123240dcc192a95))
+* **deps-dev:** Bump mocha from 6.2.2 to 7.0.0 ([167abb7](https://github.com/wmfs/pg-telepods/commit/167abb77ef03ff8719ae9777a272de62f752ae1a))
+
 # [1.38.0](https://github.com/wmfs/pg-telepods/compare/v1.37.0...v1.38.0) (2020-01-02)
 
 
