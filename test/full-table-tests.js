@@ -48,13 +48,13 @@ describe('whole-table test',
             hashSumColumnName: 'origin_hash_sum'
           },
           join: {
-            'social_security_id': 'id_number' // key = source table column, value = target table column
+            social_security_id: 'id_number' // key = source table column, value = target table column
           },
           transformFunction: function (sourceRow, callback) {
             callback(null, {
-              'id_number': sourceRow.socialSecurityId,
-              'name': `${sourceRow.firstName} ${sourceRow.lastName}`,
-              'town': 'Springfield'
+              id_number: sourceRow.socialSecurityId,
+              name: `${sourceRow.firstName} ${sourceRow.lastName}`,
+              town: 'Springfield'
             })
           }
         })
@@ -69,28 +69,28 @@ describe('whole-table test',
         expect(result.rows).to.eql(
           [
             {
-              'name': 'Homer Simpson',
-              'origin_hash_sum': 'AAAAAAAA',
-              'id_number': 1,
-              'town': 'Springfield'
+              name: 'Homer Simpson',
+              origin_hash_sum: 'AAAAAAAA',
+              id_number: 1,
+              town: 'Springfield'
             },
             {
-              'name': 'Marge Simpson',
-              'origin_hash_sum': 'BBBBBBBB',
-              'id_number': 2,
-              'town': 'Springfield'
+              name: 'Marge Simpson',
+              origin_hash_sum: 'BBBBBBBB',
+              id_number: 2,
+              town: 'Springfield'
             },
             {
-              'name': 'Montgomery Burns',
-              'origin_hash_sum': 'EEEEEEEE',
-              'id_number': 5,
-              'town': 'Springfield'
+              name: 'Montgomery Burns',
+              origin_hash_sum: 'EEEEEEEE',
+              id_number: 5,
+              town: 'Springfield'
             },
             {
-              'name': 'Ned Flanders',
-              'origin_hash_sum': '11111111',
-              'id_number': 6,
-              'town': 'Springfield'
+              name: 'Ned Flanders',
+              origin_hash_sum: '11111111',
+              id_number: 6,
+              town: 'Springfield'
             }
           ]
         )
