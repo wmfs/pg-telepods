@@ -1,3 +1,20 @@
+# [1.42.0](https://github.com/wmfs/pg-telepods/compare/v1.41.0...v1.42.0) (2020-01-27)
+
+
+### 🛠 Builds
+
+* **deps:** Bump pg from 7.17.0 to 7.17.1 ([23c600f](https://github.com/wmfs/pg-telepods/commit/23c600f827dc4f9a4ed97e477df4e507cb802e4a))
+* **deps:** Bump pg-query-stream from 2.1.2 to 3.0.0 ([aac316e](https://github.com/wmfs/pg-telepods/commit/aac316ed661041b50b4760be565271e9a63d3b44))
+* **deps-dev:** Bump codecov from 3.6.1 to 3.6.2 ([32ffad8](https://github.com/wmfs/pg-telepods/commit/32ffad8feb0248f9624b80e951b5c941d9d596d8))
+* **deps-dev:** Bump conventional-changelog-metahub from 3.0.0 to 4.0.0 ([2d458a4](https://github.com/wmfs/pg-telepods/commit/2d458a411cd9ae6d941f63ab57d28030f2c89844))
+* **deps-dev:** Bump mocha from 7.0.0 to 7.0.1 ([6b66034](https://github.com/wmfs/pg-telepods/commit/6b660343d5dfe273f04856dd2dd1ea1b2ede1fce))
+* **deps-dev:** Update standard requirement from 12.0.1 to 14.3.1 ([5570bf3](https://github.com/wmfs/pg-telepods/commit/5570bf3374679b37db1e8ed86d5d4cf9c66fb63a))
+
+
+### 💎 Styles
+
+* standard --fix ([3d5debd](https://github.com/wmfs/pg-telepods/commit/3d5debd43a5dd4cafca1b0df3aff66260e7ce8a8))
+
 # [1.41.0](https://github.com/wmfs/pg-telepods/compare/v1.40.0...v1.41.0) (2020-01-08)
 
 
