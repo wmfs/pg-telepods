@@ -52,13 +52,13 @@ describe('partial-table test',
             }
           },
           join: {
-            'social_security_id': 'id_number' // key = source table column, value = target table column
+            social_security_id: 'id_number' // key = source table column, value = target table column
           },
           transformFunction: function (sourceRow, callback) {
             callback(null, {
-              'id_number': sourceRow.socialSecurityId,
-              'name': `${sourceRow.firstName} ${sourceRow.lastName}`,
-              'town': 'Springfield'
+              id_number: sourceRow.socialSecurityId,
+              name: `${sourceRow.firstName} ${sourceRow.lastName}`,
+              town: 'Springfield'
             })
           }
         })
@@ -73,46 +73,46 @@ describe('partial-table test',
         expect(result.rows).to.eql(
           [
             {
-              'name': 'Homer Simpson',
-              'origin_hash_sum': 'AAAAAAAA',
-              'id_number': 1,
-              'town': 'Springfield'
+              name: 'Homer Simpson',
+              origin_hash_sum: 'AAAAAAAA',
+              id_number: 1,
+              town: 'Springfield'
             },
             {
-              'name': 'Marge Simpson',
-              'origin_hash_sum': 'BBBBBBBB',
-              'id_number': 2,
-              'town': 'Springfield'
+              name: 'Marge Simpson',
+              origin_hash_sum: 'BBBBBBBB',
+              id_number: 2,
+              town: 'Springfield'
             },
             {
-              'name': 'Montgomery Burns',
-              'origin_hash_sum': 'EEEEEEEE',
-              'id_number': 5,
-              'town': 'Springfield'
+              name: 'Montgomery Burns',
+              origin_hash_sum: 'EEEEEEEE',
+              id_number: 5,
+              town: 'Springfield'
             },
             {
-              'name': 'Ned Flanders',
-              'origin_hash_sum': '11111111',
-              'id_number': 6,
-              'town': 'Springfield'
+              name: 'Ned Flanders',
+              origin_hash_sum: '11111111',
+              id_number: 6,
+              town: 'Springfield'
             },
             {
-              'name': 'Phillip Fry',
-              'origin_hash_sum': 'ABCDEFGH',
-              'id_number': 20,
-              'town': 'New New York'
+              name: 'Phillip Fry',
+              origin_hash_sum: 'ABCDEFGH',
+              id_number: 20,
+              town: 'New New York'
             },
             {
-              'name': 'Leela',
-              'origin_hash_sum': 'DEFGHIJK',
-              'id_number': 21,
-              'town': 'New New York'
+              name: 'Leela',
+              origin_hash_sum: 'DEFGHIJK',
+              id_number: 21,
+              town: 'New New York'
             },
             {
-              'name': 'Doctor Zoidburg',
-              'origin_hash_sum': 'ZZZZZZZZ',
-              'id_number': 38,
-              'town': 'New New York'
+              name: 'Doctor Zoidburg',
+              origin_hash_sum: 'ZZZZZZZZ',
+              id_number: 38,
+              town: 'New New York'
             }
           ]
         )
@@ -144,13 +144,13 @@ describe('partial-table test',
             }
           },
           join: {
-            'space_id': 'id_number' // key = source table column, value = target table column
+            space_id: 'id_number' // key = source table column, value = target table column
           },
           transformFunction: function (sourceRow, callback) {
             callback(null, {
-              'id_number': sourceRow.spaceId,
-              'name': sourceRow.name,
-              'town': 'New New York'
+              id_number: sourceRow.spaceId,
+              name: sourceRow.name,
+              town: 'New New York'
             })
           }
         })
@@ -165,52 +165,52 @@ describe('partial-table test',
         expect(result.rows).to.eql(
           [
             {
-              'name': 'Homer Simpson',
-              'origin_hash_sum': 'AAAAAAAA',
-              'id_number': 1,
-              'town': 'Springfield'
+              name: 'Homer Simpson',
+              origin_hash_sum: 'AAAAAAAA',
+              id_number: 1,
+              town: 'Springfield'
             },
             {
-              'name': 'Marge Simpson',
-              'origin_hash_sum': 'BBBBBBBB',
-              'id_number': 2,
-              'town': 'Springfield'
+              name: 'Marge Simpson',
+              origin_hash_sum: 'BBBBBBBB',
+              id_number: 2,
+              town: 'Springfield'
             },
             {
-              'name': 'Montgomery Burns',
-              'origin_hash_sum': 'EEEEEEEE',
-              'id_number': 5,
-              'town': 'Springfield'
+              name: 'Montgomery Burns',
+              origin_hash_sum: 'EEEEEEEE',
+              id_number: 5,
+              town: 'Springfield'
             },
             {
-              'name': 'Ned Flanders',
-              'origin_hash_sum': '11111111',
-              'id_number': 6,
-              'town': 'Springfield'
+              name: 'Ned Flanders',
+              origin_hash_sum: '11111111',
+              id_number: 6,
+              town: 'Springfield'
             },
             {
-              'name': 'Philip J. Fry',
-              'origin_hash_sum': 'ABCDEFGQ',
-              'id_number': 20,
-              'town': 'New New York'
+              name: 'Philip J. Fry',
+              origin_hash_sum: 'ABCDEFGQ',
+              id_number: 20,
+              town: 'New New York'
             },
             {
-              'name': 'Leela',
-              'origin_hash_sum': 'DEFGHIJK',
-              'id_number': 21,
-              'town': 'New New York'
+              name: 'Leela',
+              origin_hash_sum: 'DEFGHIJK',
+              id_number: 21,
+              town: 'New New York'
             },
             {
-              'name': 'Professor Farnsworth',
-              'origin_hash_sum': 'GHIJKLMN',
-              'id_number': 22,
-              'town': 'New New York'
+              name: 'Professor Farnsworth',
+              origin_hash_sum: 'GHIJKLMN',
+              id_number: 22,
+              town: 'New New York'
             },
             {
-              'name': 'Bender',
-              'origin_hash_sum': 'AAAAAAAA',
-              'id_number': 27,
-              'town': 'New New York'
+              name: 'Bender',
+              origin_hash_sum: 'AAAAAAAA',
+              id_number: 27,
+              town: 'New New York'
             }
           ]
         )
