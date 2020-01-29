@@ -1,3 +1,12 @@
+# [1.44.0](https://github.com/wmfs/pg-telepods/compare/v1.43.0...v1.44.0) (2020-01-29)
+
+
+### 🛠 Builds
+
+* **deps:** Bump [@wmfs](https://github.com/wmfs)/supercopy from 1.26.0 to 1.27.0 ([53ba6d1](https://github.com/wmfs/pg-telepods/commit/53ba6d129daa297fad04e8e71c50f9ad2f96e5bc))
+* **deps-dev:** Bump [@semantic-release](https://github.com/semantic-release)/changelog from 3.0.6 to 5.0.0 ([210755f](https://github.com/wmfs/pg-telepods/commit/210755fec6b02bc6807baf2d8c2ad99ce4748b28))
+* **deps-dev:** Bump cz-conventional-changelog from 3.0.2 to 3.1.0 ([9a992e6](https://github.com/wmfs/pg-telepods/commit/9a992e6396e94f4432e8731cb53567a973e116d0))
+
 # [1.43.0](https://github.com/wmfs/pg-telepods/compare/v1.42.0...v1.43.0) (2020-01-27)
 
 
