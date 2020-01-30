@@ -1,3 +1,10 @@
+# [1.51.0](https://github.com/wmfs/pg-telepods/compare/v1.50.0...v1.51.0) (2020-01-30)
+
+
+### 🛠 Builds
+
+* **deps:** Bump camelcase-keys from 6.1.1 to 6.1.2 ([5f71184](https://github.com/wmfs/pg-telepods/commit/5f711844a879fe5be723e9a5ffd95fbd28db042a))
+
 # [1.50.0](https://github.com/wmfs/pg-telepods/compare/v1.49.0...v1.50.0) (2020-01-30)
 
 
