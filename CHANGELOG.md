@@ -1,3 +1,13 @@
+# [1.52.0](https://github.com/wmfs/pg-telepods/compare/v1.51.0...v1.52.0) (2020-02-10)
+
+
+### 🛠 Builds
+
+* **deps:** Bump [@wmfs](https://github.com/wmfs)/supercopy from 1.29.0 to 1.30.0 ([8cb841b](https://github.com/wmfs/pg-telepods/commit/8cb841bf2225ad3c36106b9c6ddf9027a48ad681))
+* **deps-dev:** Bump codecov from 3.6.2 to 3.6.3 ([2a1e982](https://github.com/wmfs/pg-telepods/commit/2a1e98214a41e1b9bb9af4b4eac0016ec25da23e))
+* **deps-dev:** Bump codecov from 3.6.3 to 3.6.4 ([4e9abc2](https://github.com/wmfs/pg-telepods/commit/4e9abc2b1db9a0fe3c8c634f94f8f47c1fe15e88))
+* **deps-dev:** Bump codecov from 3.6.4 to 3.6.5 ([ecf432c](https://github.com/wmfs/pg-telepods/commit/ecf432cc39c91dab036fcf9c10e872c0510413cb))
+
 # [1.51.0](https://github.com/wmfs/pg-telepods/compare/v1.50.0...v1.51.0) (2020-01-30)
 
 
