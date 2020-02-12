@@ -25,7 +25,7 @@
     "csv-string": "3.1.7",
     "debug": "4.1.1",
     "lodash": "4.17.15",
-    "make-dir": "3.0.0",
+    "make-dir": "3.0.1",
     "pg": "7.18.1",
     "pg-copy-streams": "2.2.2",
     "pg-query-stream": "3.0.2",
