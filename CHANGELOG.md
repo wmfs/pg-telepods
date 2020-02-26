@@ -1,3 +1,10 @@
+# [1.55.0](https://github.com/wmfs/pg-telepods/compare/v1.54.0...v1.55.0) (2020-02-26)
+
+
+### 🛠 Builds
+
+* **deps:** Bump pg-query-stream from 3.0.2 to 3.0.3 ([a2d700d](https://github.com/wmfs/pg-telepods/commit/a2d700d65b76cf708692cd1ae51f25c1cc5f03dc))
+
 # [1.54.0](https://github.com/wmfs/pg-telepods/compare/v1.53.0...v1.54.0) (2020-02-26)
 
 
