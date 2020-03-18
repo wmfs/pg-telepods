@@ -1,3 +1,13 @@
+# [1.58.0](https://github.com/wmfs/pg-telepods/compare/v1.57.0...v1.58.0) (2020-03-18)
+
+
+### 🛠 Builds
+
+* **deps:** Bump camelcase-keys from 6.1.2 to 6.2.1 ([93b84d6](https://github.com/wmfs/pg-telepods/commit/93b84d6f9a5c4a8e7d45d1993a00fc8a89011bc6))
+* **deps-dev:** Bump standard from 14.3.1 to 14.3.2 ([96ff446](https://github.com/wmfs/pg-telepods/commit/96ff446875f2db2a7dbafe6fff1fdd93a8de1920))
+* **deps-dev:** Bump standard from 14.3.2 to 14.3.3 ([6164f85](https://github.com/wmfs/pg-telepods/commit/6164f85edc160f1e751337112998706cfb0413c2))
+* **deps-dev:** update semantic-release dev dependencies ([13fef6f](https://github.com/wmfs/pg-telepods/commit/13fef6ff3d6874d88a27ad7e97021572773ad09f))
+
 # [1.57.0](https://github.com/wmfs/pg-telepods/compare/v1.56.0...v1.57.0) (2020-02-26)
 
 
