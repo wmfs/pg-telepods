@@ -1,3 +1,11 @@
+# [1.59.0](https://github.com/wmfs/pg-telepods/compare/v1.58.0...v1.59.0) (2020-03-24)
+
+
+### 🛠 Builds
+
+* **deps:** Bump csv-string from 3.1.8 to 3.2.0 ([e813e80](https://github.com/wmfs/pg-telepods/commit/e813e80614139d74e3a802775d5319b0fdc19e0c))
+* **deps-dev:** Bump mocha from 7.1.0 to 7.1.1 ([0690b3b](https://github.com/wmfs/pg-telepods/commit/0690b3be21d754f87102fa66b7ab73d21923cbe6))
+
 # [1.58.0](https://github.com/wmfs/pg-telepods/compare/v1.57.0...v1.58.0) (2020-03-18)
 
 
