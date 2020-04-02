@@ -1,3 +1,10 @@
+# [1.61.0](https://github.com/wmfs/pg-telepods/compare/v1.60.0...v1.61.0) (2020-04-02)
+
+
+### 🛠 Builds
+
+* **deps:** Bump pg from 7.18.2 to 8.0.0 ([e063b3e](https://github.com/wmfs/pg-telepods/commit/e063b3e17215d5a33ce0af65a171660a5cd3c938))
+
 # [1.60.0](https://github.com/wmfs/pg-telepods/compare/v1.59.0...v1.60.0) (2020-04-02)
 
 
