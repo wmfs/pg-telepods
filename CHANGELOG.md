@@ -1,3 +1,16 @@
+# [1.60.0](https://github.com/wmfs/pg-telepods/compare/v1.59.0...v1.60.0) (2020-04-02)
+
+
+### 🛠 Builds
+
+* **deps:** Bump [@wmfs](https://github.com/wmfs)/supercopy from 1.33.0 to 1.34.0 ([b5a10e7](https://github.com/wmfs/pg-telepods/commit/b5a10e7dae71255aae2864e9fe9dfdc939d6ba8c))
+* **deps-dev:** Bump [@semantic-release](https://github.com/semantic-release)/changelog from 5.0.0 to 5.0.1 ([348eb9a](https://github.com/wmfs/pg-telepods/commit/348eb9a051d3d2b32a4f4ee149535b01dab19cf6))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** add context env var config to config.yml ([8b0cb47](https://github.com/wmfs/pg-telepods/commit/8b0cb475a7b4b4ffdc6585073dffd5947e9a1c44))
+
 # [1.59.0](https://github.com/wmfs/pg-telepods/compare/v1.58.0...v1.59.0) (2020-03-24)
 
 
