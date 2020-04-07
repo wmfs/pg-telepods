@@ -1,3 +1,11 @@
+# [1.64.0](https://github.com/wmfs/pg-telepods/compare/v1.63.0...v1.64.0) (2020-04-07)
+
+
+### 🛠 Builds
+
+* **deps:** Bump camelcase-keys from 6.2.1 to 6.2.2 ([32e76ce](https://github.com/wmfs/pg-telepods/commit/32e76cef81ce942cdc8f0b0558443d1fd95401a6))
+* **deps-dev:** Bump nyc from 15.0.0 to 15.0.1 ([e503e04](https://github.com/wmfs/pg-telepods/commit/e503e04371629e0c78678b9f17c667fab724220f))
+
 # [1.63.0](https://github.com/wmfs/pg-telepods/compare/v1.62.0...v1.63.0) (2020-04-02)
 
 
