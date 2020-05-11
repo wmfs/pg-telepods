@@ -27,7 +27,7 @@
     "lodash": "4.17.15",
     "make-dir": "3.0.2",
     "pg": "8.1.0",
-    "pg-copy-streams": "2.2.2",
+    "pg-copy-streams": "3.0.0",
     "pg-query-stream": "3.0.6",
     "@wmfs/supercopy": "1.37.0"
   },
