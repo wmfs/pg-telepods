@@ -1,3 +1,15 @@
+# [1.70.0](https://github.com/wmfs/pg-telepods/compare/v1.69.0...v1.70.0) (2020-05-31)
+
+
+### 🛠 Builds
+
+* **deps:** Bump csv-string from 3.2.0 to 4.0.1 ([c008b68](https://github.com/wmfs/pg-telepods/commit/c008b6884f84df1eec386de9aab16fe953ad2b00))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.20.0 to 1.21.0 ([ec3cecb](https://github.com/wmfs/pg-telepods/commit/ec3cecb7472f25eecfffd16a45f172c610bcbba8))
+* **deps-dev:** Bump codecov from 3.6.5 to 3.7.0 ([6112b00](https://github.com/wmfs/pg-telepods/commit/6112b004b7a17060fe5cbb82aa4979f24b76d7bc))
+* **deps-dev:** Bump mocha from 7.1.2 to 7.2.0 ([6551218](https://github.com/wmfs/pg-telepods/commit/65512180cadf06e76e69d9fa4f661f2201d2dc60))
+* **deps-dev:** Bump semantic-release from 17.0.7 to 17.0.8 ([86f6869](https://github.com/wmfs/pg-telepods/commit/86f686972fe49fc14564fad1758db2305be00b22))
+* **deps-dev:** Bump standard from 14.3.3 to 14.3.4 ([a0c5578](https://github.com/wmfs/pg-telepods/commit/a0c55782a7dc454e0925b4cee5bf0bafb7b7cf64))
+
 # [1.69.0](https://github.com/wmfs/pg-telepods/compare/v1.68.0...v1.69.0) (2020-05-11)
 
 
