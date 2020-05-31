@@ -1,3 +1,10 @@
+# [1.71.0](https://github.com/wmfs/pg-telepods/compare/v1.70.0...v1.71.0) (2020-05-31)
+
+
+### 🛠 Builds
+
+* **deps:** Bump make-dir from 3.0.2 to 3.1.0 ([dccbba9](https://github.com/wmfs/pg-telepods/commit/dccbba9f60d40b7706059dca4af38422fcd6412c))
+
 # [1.70.0](https://github.com/wmfs/pg-telepods/compare/v1.69.0...v1.70.0) (2020-05-31)
 
 
