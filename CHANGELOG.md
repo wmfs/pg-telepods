@@ -1,3 +1,18 @@
+# [1.73.0](https://github.com/wmfs/pg-telepods/compare/v1.72.0...v1.73.0) (2020-07-13)
+
+
+### 🛠 Builds
+
+* **deps:** Bump lodash from 4.17.15 to 4.17.19 ([e34515d](https://github.com/wmfs/pg-telepods/commit/e34515d75d3227e442cf5a2159a43a4bd503d194))
+* **deps-dev:** Bump mocha from 7.2.0 to 8.0.1 ([f09d97e](https://github.com/wmfs/pg-telepods/commit/f09d97e250e2d4affc48590434a720c7501d18a0))
+* **deps-dev:** Bump semantic-release from 17.0.8 to 17.1.0 ([419078e](https://github.com/wmfs/pg-telepods/commit/419078ecf312c7dba5eab06f9237b88f3071150c))
+* **deps-dev:** Bump semantic-release from 17.1.0 to 17.1.1 ([f3a67c2](https://github.com/wmfs/pg-telepods/commit/f3a67c29541b47c6036af13f8330fb4d518845e6))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** use updated circle node image [skip ci] ([db6dcd1](https://github.com/wmfs/pg-telepods/commit/db6dcd1bb437bb20d148f6f15e6cdcd37e05577d))
+
 # [1.72.0](https://github.com/wmfs/pg-telepods/compare/v1.71.0...v1.72.0) (2020-06-01)
 
 
