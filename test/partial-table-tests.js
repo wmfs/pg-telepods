@@ -18,7 +18,6 @@ function checkFileLength (outputDir, operation, filename, expectedLength) {
   expect(deletes.split('\n').length).to.equal(expectedLength)
 }
 
-
 describe('partial-table test',
   function () {
     this.timeout(process.env.TIMEOUT || 5000)
@@ -125,6 +124,14 @@ describe('partial-table test',
         )
       })
 
+      it('check for inserts csv', () => {
+        checkFileLength(firstSyncOutputDir, 'inserts', 'census.csv', 4)
+      })
+
+      it('check for upserts csv', () => {
+        checkFileLength(firstSyncOutputDir, 'upserts', 'census.csv', 3)
+      })
+
       it('check for deletes csv', () => {
         checkFileLength(firstSyncOutputDir, 'deletes', 'census.csv', 4)
       })
@@ -217,6 +224,14 @@ describe('partial-table test',
             }
           ]
         )
+      })
+
+      it('check for inserts csv', () => {
+        checkFileLength(secondSyncOutputDir, 'inserts', 'census.csv', 4)
+      })
+
+      it('check for upserts csv', () => {
+        checkFileLength(secondSyncOutputDir, 'upserts', 'census.csv', 3)
       })
 
       it('check for deletes csv', () => {
