@@ -40,6 +40,7 @@ describe('partial-table test',
 
     const firstSyncOutputDir = path.resolve(__dirname, './output', 'first-partial')
     const secondSyncOutputDir = path.resolve(__dirname, './output', 'second-partial')
+    const thirdSyncOutputDir = path.resolve(__dirname, './output', 'partial-with-conflict')
 
     describe('sync first table', () => {
       it('start the telepods', async () => {
@@ -236,6 +237,53 @@ describe('partial-table test',
 
       it('check for deletes csv', () => {
         checkFileLength(secondSyncOutputDir, 'deletes', 'census.csv', 3)
+      })
+    })
+
+    describe('sync with conflict', () => {
+      it('create conflict row - matching primary key, but wrong city', async () => {
+        await client.query('update government.census set origin_hash_sum = \'QQQQ\', name = \'Lila\', town = \'Nowhere\' where id_number = 21')
+      })
+
+      it('start the telepods', async () => {
+        const result = await startTelepods({
+          client: client,
+          outputDir: thirdSyncOutputDir,
+          source: {
+            tableName: 'worldof.tomorrow',
+            hashSumColumnName: 'hash_sum'
+          },
+          target: {
+            tableName: 'government.census',
+            hashSumColumnName: 'origin_hash_sum',
+            where: {
+              town: { equals: 'New New York' }
+            }
+          },
+          join: {
+            space_id: 'id_number' // key = source table column, value = target table column
+          },
+          transformFunction: function (sourceRow, callback) {
+            callback(null, {
+              id_number: sourceRow.spaceId,
+              name: sourceRow.name,
+              town: 'New New York'
+            })
+          }
+        })
+        expect(result).to.not.equal(null)
+      })
+
+      it('check empty inserts csv', () => {
+        checkFileLength(thirdSyncOutputDir, 'inserts', 'census.csv', 1)
+      })
+
+      it('check empty upserts csv', () => {
+        checkFileLength(thirdSyncOutputDir, 'upserts', 'census.csv', 1)
+      })
+
+      it('check empty deletes csv', () => {
+        checkFileLength(thirdSyncOutputDir, 'deletes', 'census.csv', 2)
       })
     })
 
