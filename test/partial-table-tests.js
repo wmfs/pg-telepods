@@ -10,6 +10,15 @@ const expect = chai.expect
 const path = require('path')
 const fs = require('fs')
 
+function checkFileLength (outputDir, operation, filename, expectedLength) {
+  const censusDeletes = path.resolve(outputDir, operation, filename)
+  expect(fs.existsSync(censusDeletes)).to.equal(true)
+
+  const deletes = fs.readFileSync(censusDeletes, { encoding: 'utf-8' })
+  expect(deletes.split('\n').length).to.equal(expectedLength)
+}
+
+
 describe('partial-table test',
   function () {
     this.timeout(process.env.TIMEOUT || 5000)
@@ -117,11 +126,7 @@ describe('partial-table test',
       })
 
       it('check for deletes csv', () => {
-        const censusDeletes = path.resolve(firstSyncOutputDir, 'deletes', 'census.csv')
-        expect(fs.existsSync(censusDeletes)).to.equal(true)
-
-        const deletes = fs.readFileSync(censusDeletes, { encoding: 'utf-8' })
-        expect(deletes.split('\n').length).to.equal(4)
+        checkFileLength(firstSyncOutputDir, 'deletes', 'census.csv', 4)
       })
     })
 
@@ -215,11 +220,7 @@ describe('partial-table test',
       })
 
       it('check for deletes csv', () => {
-        const censusDeletes = path.resolve(secondSyncOutputDir, 'deletes', 'census.csv')
-        expect(fs.existsSync(censusDeletes)).to.equal(true)
-
-        const deletes = fs.readFileSync(censusDeletes, { encoding: 'utf-8' })
-        expect(deletes.split('\n').length).to.equal(3)
+        checkFileLength(secondSyncOutputDir, 'deletes', 'census.csv', 3)
       })
     })
 
