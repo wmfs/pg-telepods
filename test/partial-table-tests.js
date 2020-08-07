@@ -22,14 +22,12 @@ describe('partial-table test',
       }
     })
 
-    describe('set up', () => {
-      it('create a new pg client', () => {
-        client = new HlPgClient(process.env.PG_CONNECTION_STRING)
-      })
+    before('create a new pg client', () => {
+      client = new HlPgClient(process.env.PG_CONNECTION_STRING)
+    })
 
-      it('install test schemas', () => {
-        return client.runFile(path.resolve(__dirname, 'fixtures', 'install-test-schemas.sql'))
-      })
+    before('install test schemas', () => {
+      return client.runFile(path.resolve(__dirname, 'fixtures', 'install-test-schemas.sql'))
     })
 
     const firstSyncOutputDir = path.resolve(__dirname, './output', 'first-partial')
@@ -225,14 +223,12 @@ describe('partial-table test',
       })
     })
 
-    describe('clean up', () => {
-      it('uninstall test schemas', () => {
-        return client.runFile(path.resolve(__dirname, 'fixtures', 'uninstall-test-schemas.sql'))
-      })
+    after('uninstall test schemas', () => {
+      return client.runFile(path.resolve(__dirname, 'fixtures', 'uninstall-test-schemas.sql'))
+    })
 
-      it('close database connections', () => {
-        client.end()
-      })
+    after('close database connections', () => {
+      client.end()
     })
   }
 )
