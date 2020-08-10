@@ -40,7 +40,8 @@ describe('partial-table test',
 
     const firstSyncOutputDir = path.resolve(__dirname, './output', 'first-partial')
     const secondSyncOutputDir = path.resolve(__dirname, './output', 'second-partial')
-    const thirdSyncOutputDir = path.resolve(__dirname, './output', 'partial-with-conflict')
+    const thirdSyncOutputDir = path.resolve(__dirname, './output', 'partial-with-hash-conflict')
+    const fourthSyncOutputDir = path.resolve(__dirname, './output', 'partial-with-null-hash-conflict')
 
     describe('sync first table', () => {
       it('start the telepods', async () => {
@@ -240,8 +241,8 @@ describe('partial-table test',
       })
     })
 
-    describe('sync with conflict', () => {
-      it('create conflict row - matching primary key, but wrong city', async () => {
+    describe('sync conflict with hash_sum mismatch', () => {
+      it('create conflicting update row - matching primary key, changed hash, wrong city', async () => {
         await client.query('update government.census set origin_hash_sum = \'QQQQ\', name = \'Lila\', town = \'Nowhere\' where id_number = 21')
       })
 
@@ -288,6 +289,57 @@ describe('partial-table test',
 
       it('check conflict csv has one row', () => {
         checkFileLength(thirdSyncOutputDir, 'conflicts', 'census.csv', 3)
+      })
+    })
+
+    describe('sync conflict with null target hash_sum', () => {
+      it('create conflicting insert row - matching primary key, null hash, but wrong city', async () => {
+        await client.query('update government.census set origin_hash_sum = null, name = \'Lila\', town = \'Nowhere\' where id_number = 21')
+      })
+
+      it('start the telepods', async () => {
+        const result = await startTelepods({
+          client: client,
+          outputDir: fourthSyncOutputDir,
+          source: {
+            tableName: 'worldof.tomorrow',
+            hashSumColumnName: 'hash_sum'
+          },
+          target: {
+            tableName: 'government.census',
+            hashSumColumnName: 'origin_hash_sum',
+            where: {
+              town: { equals: 'New New York' }
+            }
+          },
+          join: {
+            space_id: 'id_number' // key = source table column, value = target table column
+          },
+          transformFunction: function (sourceRow, callback) {
+            callback(null, {
+              id_number: sourceRow.spaceId,
+              name: sourceRow.name,
+              town: 'New New York'
+            })
+          }
+        })
+        expect(result).to.not.equal(null)
+      })
+
+      it('check empty inserts csv', () => {
+        checkFileLength(fourthSyncOutputDir, 'inserts', 'census.csv', 1)
+      })
+
+      it('check empty upserts csv', () => {
+        checkFileLength(fourthSyncOutputDir, 'upserts', 'census.csv', 1)
+      })
+
+      it('check empty deletes csv', () => {
+        checkFileLength(fourthSyncOutputDir, 'deletes', 'census.csv', 2)
+      })
+
+      it('check conflict csv has one row', () => {
+        checkFileLength(fourthSyncOutputDir, 'conflicts', 'census.csv', 3)
       })
     })
 

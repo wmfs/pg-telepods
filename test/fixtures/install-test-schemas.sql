@@ -37,7 +37,7 @@ INSERT INTO worldof.tomorrow (hash_sum, space_id, name) VALUES
 CREATE SCHEMA government;
 
 CREATE TABLE government.census (
-  origin_hash_sum text NOT NULL,
+  origin_hash_sum text,
   id_number integer NOT NULL,
   name text NOT NULL,
   town text,
