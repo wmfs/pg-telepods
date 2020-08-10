@@ -20,7 +20,7 @@ function checkFileLength (outputDir, operation, filename, expectedLength) {
 
 describe('partial-table test',
   function () {
-    this.timeout(process.env.TIMEOUT || 5000)
+    // this.timeout(process.env.TIMEOUT || 5000)
     let client
 
     before(function () {
@@ -284,6 +284,10 @@ describe('partial-table test',
 
       it('check empty deletes csv', () => {
         checkFileLength(thirdSyncOutputDir, 'deletes', 'census.csv', 2)
+      })
+
+      it('check conflict csv has one row', () => {
+        checkFileLength(thirdSyncOutputDir, 'conflicts', 'census.csv', 3)
       })
     })
 
