@@ -86,7 +86,6 @@ describe('where clause generation', () => {
     })
   }
 
-
   it('unknown comparator fails', () => {
     const f = () => generateWhereClause({ field: { cromulant: true } })
     expect(f).to.throw()
