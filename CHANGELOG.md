@@ -1,3 +1,20 @@
+# [1.76.0](https://github.com/wmfs/pg-telepods/compare/v1.75.0...v1.76.0) (2020-08-17)
+
+
+### 🛠 Builds
+
+* **deps:** Bump lodash from 4.17.19 to 4.17.20 ([14b4047](https://github.com/wmfs/pg-telepods/commit/14b40472d3ff83a3eed9baa906d29f7c1c36f330))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.21.0 to 1.22.0 ([59561f9](https://github.com/wmfs/pg-telepods/commit/59561f963eb8b917004bf558786422b447877eec))
+* **deps-dev:** Bump codecov from 3.7.0 to 3.7.1 ([b54f9e6](https://github.com/wmfs/pg-telepods/commit/b54f9e6fcf4f590dd13583a6392ee373baa57aaa))
+* **deps-dev:** Bump codecov from 3.7.1 to 3.7.2 ([dbf8256](https://github.com/wmfs/pg-telepods/commit/dbf8256eb1516d0616c21a1255df40a508099a70))
+* **deps-dev:** Bump mocha from 8.0.1 to 8.1.0 ([dbe25f6](https://github.com/wmfs/pg-telepods/commit/dbe25f69e6781685d3e78d4aa0627f5200106ba1))
+* **deps-dev:** Bump mocha from 8.1.0 to 8.1.1 ([d6d4012](https://github.com/wmfs/pg-telepods/commit/d6d401287d2fa155b525a6f4f92fc3f569b62df9))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** separate lint job [ch1009] ([d08b810](https://github.com/wmfs/pg-telepods/commit/d08b81038bc7ffe3880ab3111e84a3e5d5c75a5f))
+
 # [1.75.0](https://github.com/wmfs/pg-telepods/compare/v1.74.0...v1.75.0) (2020-07-15)
 
 
