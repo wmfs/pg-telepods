@@ -1,3 +1,46 @@
+# [1.79.0](https://github.com/wmfs/pg-telepods/compare/v1.78.0...v1.79.0) (2020-08-31)
+
+
+### ✨ Features
+
+* if sync has conflicts (mismatched where clause), output those to a separate file ([58f428a](https://github.com/wmfs/pg-telepods/commit/58f428a85f8876da984f1fa0c9e0e99d00df08ef))
+
+
+### 🐛 Bug Fixes
+
+* qualify where clause conditions with 'target.' to prevent potential ambiguity with source ([366d40d](https://github.com/wmfs/pg-telepods/commit/366d40daf788c9f5176dbbae1dba5e0a917832cc))
+* split upserts into inserts and updates ([2fb478b](https://github.com/wmfs/pg-telepods/commit/2fb478be3a3e8924e3199038b0082d43cdf9eaac))
+* tighten queries to account for null target hashsum ([700a7c2](https://github.com/wmfs/pg-telepods/commit/700a7c25dc27ffa7177dc18981e5e9866edd532e))
+* tweak conflicts select to handle nulls in the where conditions ([48025e3](https://github.com/wmfs/pg-telepods/commit/48025e33934124038599375fb19785f38242c9b4))
+
+
+### 🛠 Builds
+
+* Bump [@wmfs](https://github.com/wmfs)/supercopy to 1.39 from 1.38 ([b011798](https://github.com/wmfs/pg-telepods/commit/b01179867eb34cbb93e6bd7fa07d381d97ce6e4e))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.22.0 to 1.23.0 ([507f50f](https://github.com/wmfs/pg-telepods/commit/507f50f405bf59eb002f8b4999ad124f9b0d6d3c))
+* **deps-dev:** Bump cz-conventional-changelog from 3.2.0 to 3.2.1 ([61bf175](https://github.com/wmfs/pg-telepods/commit/61bf175b0dcd1a1ce46fc9683c330f11d9c4aee0))
+* **deps-dev:** Bump cz-conventional-changelog from 3.2.1 to 3.3.0 ([2cc16e2](https://github.com/wmfs/pg-telepods/commit/2cc16e2ec7058829134fac76d4d0ac92d28f2000))
+* **deps-dev:** Bump mocha from 8.1.1 to 8.1.2 ([5c3717e](https://github.com/wmfs/pg-telepods/commit/5c3717e6e203d4bc8f355b458dd8423f44b0d8c9))
+* **deps-dev:** Bump mocha from 8.1.2 to 8.1.3 ([5974df5](https://github.com/wmfs/pg-telepods/commit/5974df5d38f1e32f9ae504be6101c1b5d52ef82d))
+
+
+### 📦 Code Refactoring
+
+* factor out common processInserts/processUpdates code ([7147d0a](https://github.com/wmfs/pg-telepods/commit/7147d0a0f4f61916bc9bb75902e37776d6b7f530))
+* s/processCopy/syncChanges/g ([79c91cf](https://github.com/wmfs/pg-telepods/commit/79c91cfa55fbff0d89f518e69867951578b0cf94))
+
+
+### 🚨 Tests
+
+* factored out checkFileLength function ([e01e642](https://github.com/wmfs/pg-telepods/commit/e01e642df09759ce0d46c279e9bf7530dd8214e0))
+* move setup and teardown into before/after functions ([ea20f81](https://github.com/wmfs/pg-telepods/commit/ea20f81c1a8ecc22fe4d62ddb2e9b29d2ce7bff3))
+* partial update with conflict (where doesn't match) test ([499303b](https://github.com/wmfs/pg-telepods/commit/499303b148fff45fbec230cbe6682d4c19bd5c13))
+
+
+### 💎 Styles
+
+* lint ([5e3ee68](https://github.com/wmfs/pg-telepods/commit/5e3ee68ce44792c56d6ca0db798a0c31350fb6e6))
+
 # [1.78.0](https://github.com/wmfs/pg-telepods/compare/v1.77.0...v1.78.0) (2020-08-24)
 
 
