@@ -11,14 +11,19 @@ const path = require('path')
 const fs = require('fs')
 
 function checkFileLength (outputDir, operation, filename, expectedLength) {
-  const censusDeletes = path.resolve(outputDir, operation, filename)
-  expect(fs.existsSync(censusDeletes)).to.equal(true)
+  const censusFile = path.resolve(outputDir, operation, filename)
+  expect(fs.existsSync(censusFile)).to.equal(true)
 
-  const deletes = fs.readFileSync(censusDeletes, { encoding: 'utf-8' })
+  const deletes = fs.readFileSync(censusFile, { encoding: 'utf-8' })
   expect(deletes.split('\n').length).to.equal(expectedLength)
 }
 
-describe('partial-table test',
+function fileNotExists (outputDir, operation, filename) {
+  const censusDeletes = path.resolve(outputDir, operation, filename)
+  expect(fs.existsSync(censusDeletes)).to.equal(false)
+}
+
+describe('partial-table population',
   function () {
     // this.timeout(process.env.TIMEOUT || 5000)
     let client
@@ -38,13 +43,13 @@ describe('partial-table test',
       return client.runFile(path.resolve(__dirname, 'fixtures', 'install-test-schemas.sql'))
     })
 
-    const firstSyncOutputDir = path.resolve(__dirname, './output', 'first-partial')
-    const secondSyncOutputDir = path.resolve(__dirname, './output', 'second-partial')
-    const thirdSyncOutputDir = path.resolve(__dirname, './output', 'partial-with-hash-conflict')
-    const fourthSyncOutputDir = path.resolve(__dirname, './output', 'partial-with-null-hash-conflict')
-    const fifthSyncOutputDir = path.resolve(__dirname, './output', 'partial-with-null-town-conflict')
+    before('empty census table', async () => {
+      await client.query('DELETE FROM government.census')
+    })
 
-    describe('sync first table', () => {
+    const firstSyncOutputDir = path.resolve(__dirname, './output', 'first-partial-populate')
+
+    describe('sync first table to populate target', () => {
       it('start the telepods', async () => {
         const result = await startTelepods({
           client: client,
@@ -104,294 +109,25 @@ describe('partial-table test',
               origin_hash_sum: '11111111',
               id_number: 6,
               town: 'Springfield'
-            },
-            {
-              name: 'Phillip Fry',
-              origin_hash_sum: 'ABCDEFGH',
-              id_number: 20,
-              town: 'New New York'
-            },
-            {
-              name: 'Leela',
-              origin_hash_sum: 'DEFGHIJK',
-              id_number: 21,
-              town: 'New New York'
-            },
-            {
-              name: 'Doctor Zoidburg',
-              origin_hash_sum: 'ZZZZZZZZ',
-              id_number: 38,
-              town: 'New New York'
             }
           ]
         )
       })
 
       it('check for inserts csv', () => {
-        checkFileLength(firstSyncOutputDir, 'inserts', 'census.csv', 4)
+        checkFileLength(firstSyncOutputDir, 'inserts', 'census.csv', 6) // header + 4 lines + trailing cr
       })
 
       it('check for upserts csv', () => {
-        checkFileLength(firstSyncOutputDir, 'upserts', 'census.csv', 3)
+        checkFileLength(firstSyncOutputDir, 'upserts', 'census.csv', 1) // cr
       })
 
       it('check for deletes csv', () => {
-        checkFileLength(firstSyncOutputDir, 'deletes', 'census.csv', 4)
-      })
-    })
-
-    describe('sync second table', () => {
-      it('start the telepods', async () => {
-        const result = await startTelepods({
-          client: client,
-          outputDir: secondSyncOutputDir,
-          source: {
-            tableName: 'worldof.tomorrow',
-            hashSumColumnName: 'hash_sum'
-          },
-          target: {
-            tableName: 'government.census',
-            hashSumColumnName: 'origin_hash_sum',
-            where: {
-              town: { equals: 'New New York' }
-            }
-          },
-          join: {
-            space_id: 'id_number' // key = source table column, value = target table column
-          },
-          transformFunction: function (sourceRow, callback) {
-            callback(null, {
-              id_number: sourceRow.spaceId,
-              name: sourceRow.name,
-              town: 'New New York'
-            })
-          }
-        })
-        expect(result).to.not.equal(null)
+        checkFileLength(firstSyncOutputDir, 'deletes', 'census.csv', 2) // header + cr
       })
 
-      it('verify modified children rows', async () => {
-        const result = await client.query(
-          'select id_number, origin_hash_sum, name, town from government.census order by id_number'
-        )
-        expect(result).to.not.equal(null)
-        expect(result.rows).to.eql(
-          [
-            {
-              name: 'Homer Simpson',
-              origin_hash_sum: 'AAAAAAAA',
-              id_number: 1,
-              town: 'Springfield'
-            },
-            {
-              name: 'Marge Simpson',
-              origin_hash_sum: 'BBBBBBBB',
-              id_number: 2,
-              town: 'Springfield'
-            },
-            {
-              name: 'Montgomery Burns',
-              origin_hash_sum: 'EEEEEEEE',
-              id_number: 5,
-              town: 'Springfield'
-            },
-            {
-              name: 'Ned Flanders',
-              origin_hash_sum: '11111111',
-              id_number: 6,
-              town: 'Springfield'
-            },
-            {
-              name: 'Philip J. Fry',
-              origin_hash_sum: 'ABCDEFGQ',
-              id_number: 20,
-              town: 'New New York'
-            },
-            {
-              name: 'Leela',
-              origin_hash_sum: 'DEFGHIJK',
-              id_number: 21,
-              town: 'New New York'
-            },
-            {
-              name: 'Professor Farnsworth',
-              origin_hash_sum: 'GHIJKLMN',
-              id_number: 22,
-              town: 'New New York'
-            },
-            {
-              name: 'Bender',
-              origin_hash_sum: 'AAAAAAAA',
-              id_number: 27,
-              town: 'New New York'
-            }
-          ]
-        )
-      })
-
-      it('check for inserts csv', () => {
-        checkFileLength(secondSyncOutputDir, 'inserts', 'census.csv', 4)
-      })
-
-      it('check for upserts csv', () => {
-        checkFileLength(secondSyncOutputDir, 'upserts', 'census.csv', 3)
-      })
-
-      it('check for deletes csv', () => {
-        checkFileLength(secondSyncOutputDir, 'deletes', 'census.csv', 3)
-      })
-    })
-
-    describe('sync conflict with hash_sum mismatch', () => {
-      it('create conflicting update row - matching primary key, changed hash, wrong city', async () => {
-        await client.query('update government.census set origin_hash_sum = \'QQQQ\', name = \'Lila\', town = \'Nowhere\' where id_number = 21')
-      })
-
-      it('start the telepods', async () => {
-        const result = await startTelepods({
-          client: client,
-          outputDir: thirdSyncOutputDir,
-          source: {
-            tableName: 'worldof.tomorrow',
-            hashSumColumnName: 'hash_sum'
-          },
-          target: {
-            tableName: 'government.census',
-            hashSumColumnName: 'origin_hash_sum',
-            where: {
-              town: { equals: 'New New York' }
-            }
-          },
-          join: {
-            space_id: 'id_number' // key = source table column, value = target table column
-          },
-          transformFunction: function (sourceRow, callback) {
-            callback(null, {
-              id_number: sourceRow.spaceId,
-              name: sourceRow.name,
-              town: 'New New York'
-            })
-          }
-        })
-        expect(result).to.not.equal(null)
-      })
-
-      it('check empty inserts csv', () => {
-        checkFileLength(thirdSyncOutputDir, 'inserts', 'census.csv', 1)
-      })
-
-      it('check empty upserts csv', () => {
-        checkFileLength(thirdSyncOutputDir, 'upserts', 'census.csv', 1)
-      })
-
-      it('check empty deletes csv', () => {
-        checkFileLength(thirdSyncOutputDir, 'deletes', 'census.csv', 2)
-      })
-
-      it('check conflict csv has one row', () => {
-        checkFileLength(thirdSyncOutputDir, 'conflicts', 'census.csv', 3)
-      })
-    })
-
-    describe('sync conflict with null target hash_sum', () => {
-      it('create conflicting insert row - matching primary key, null hash, but wrong city', async () => {
-        await client.query('update government.census set origin_hash_sum = null, name = \'Lila\', town = \'Nowhere\' where id_number = 21')
-      })
-
-      it('start the telepods', async () => {
-        const result = await startTelepods({
-          client: client,
-          outputDir: fourthSyncOutputDir,
-          source: {
-            tableName: 'worldof.tomorrow',
-            hashSumColumnName: 'hash_sum'
-          },
-          target: {
-            tableName: 'government.census',
-            hashSumColumnName: 'origin_hash_sum',
-            where: {
-              town: { equals: 'New New York' }
-            }
-          },
-          join: {
-            space_id: 'id_number' // key = source table column, value = target table column
-          },
-          transformFunction: function (sourceRow, callback) {
-            callback(null, {
-              id_number: sourceRow.spaceId,
-              name: sourceRow.name,
-              town: 'New New York'
-            })
-          }
-        })
-        expect(result).to.not.equal(null)
-      })
-
-      it('check empty inserts csv', () => {
-        checkFileLength(fourthSyncOutputDir, 'inserts', 'census.csv', 1)
-      })
-
-      it('check empty upserts csv', () => {
-        checkFileLength(fourthSyncOutputDir, 'upserts', 'census.csv', 1)
-      })
-
-      it('check empty deletes csv', () => {
-        checkFileLength(fourthSyncOutputDir, 'deletes', 'census.csv', 2)
-      })
-
-      it('check conflict csv has one row', () => {
-        checkFileLength(fourthSyncOutputDir, 'conflicts', 'census.csv', 3)
-      })
-    })
-
-    describe('sync conflict with null target hash_sum and null town', () => {
-      it('create conflicting insert row - matching primary key, null hash, but wrong city', async () => {
-        await client.query('update government.census set origin_hash_sum = null, name = \'Lila\', town = null where id_number = 21')
-      })
-
-      it('start the telepods', async () => {
-        const result = await startTelepods({
-          client: client,
-          outputDir: fifthSyncOutputDir,
-          source: {
-            tableName: 'worldof.tomorrow',
-            hashSumColumnName: 'hash_sum'
-          },
-          target: {
-            tableName: 'government.census',
-            hashSumColumnName: 'origin_hash_sum',
-            where: {
-              town: { equals: 'New New York' }
-            }
-          },
-          join: {
-            space_id: 'id_number' // key = source table column, value = target table column
-          },
-          transformFunction: function (sourceRow, callback) {
-            callback(null, {
-              id_number: sourceRow.spaceId,
-              name: sourceRow.name,
-              town: 'New New York'
-            })
-          }
-        })
-        expect(result).to.not.equal(null)
-      })
-
-      it('check empty inserts csv', () => {
-        checkFileLength(fifthSyncOutputDir, 'inserts', 'census.csv', 1)
-      })
-
-      it('check empty upserts csv', () => {
-        checkFileLength(fifthSyncOutputDir, 'upserts', 'census.csv', 1)
-      })
-
-      it('check empty deletes csv', () => {
-        checkFileLength(fifthSyncOutputDir, 'deletes', 'census.csv', 2)
-      })
-
-      it('check conflict csv has one row', () => {
-        checkFileLength(fifthSyncOutputDir, 'conflicts', 'census.csv', 3)
+      it('check for conflicts csv', () => {
+        fileNotExists(firstSyncOutputDir, 'conflicts', 'census.csv')
       })
     })
 
@@ -402,5 +138,4 @@ describe('partial-table test',
     after('close database connections', () => {
       client.end()
     })
-  }
-)
+  })
