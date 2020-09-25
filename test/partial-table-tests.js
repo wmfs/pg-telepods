@@ -138,6 +138,10 @@ describe('partial-table test',
       it('check for deletes csv', () => {
         checkFileLength(firstSyncOutputDir, 'deletes', 'census.csv', 4)
       })
+
+      it('check for conflicts csv', () => {
+        checkFileLength(firstSyncOutputDir, 'conflicts', 'census.csv', 1) // cr
+      })
     })
 
     describe('sync second table', () => {
@@ -239,6 +243,10 @@ describe('partial-table test',
 
       it('check for deletes csv', () => {
         checkFileLength(secondSyncOutputDir, 'deletes', 'census.csv', 3)
+      })
+
+      it('check for conflicts csv', () => {
+        checkFileLength(secondSyncOutputDir, 'conflicts', 'census.csv', 1) // cr
       })
     })
 
@@ -345,7 +353,7 @@ describe('partial-table test',
     })
 
     describe('sync conflict with null target hash_sum and null town', () => {
-      it('create conflicting insert row - matching primary key, null hash, but wrong city', async () => {
+      it('create conflicting insert row - matching primary key, null hash, null city', async () => {
         await client.query('update government.census set origin_hash_sum = null, name = \'Lila\', town = null where id_number = 21')
       })
 

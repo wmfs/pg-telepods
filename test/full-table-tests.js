@@ -101,6 +101,11 @@ describe('whole-table test',
       expect(deletes.split('\n').length).to.equal(7)
     })
 
+    it('check no conflicts', () => {
+      const censusConflicts = path.resolve(firstSyncOutputDir, 'conflicts', 'census.csv')
+      expect(fs.existsSync(censusConflicts)).to.equal(false)
+    })
+
     after('uninstall test schemas', () => {
       return client.runFile(path.resolve(__dirname, 'fixtures', 'uninstall-test-schemas.sql'))
     })
