@@ -1,3 +1,26 @@
+## [1.79.1](https://github.com/wmfs/pg-telepods/compare/v1.79.0...v1.79.1) (2020-09-25)
+
+
+### 🐛 Bug Fixes
+
+* Don't gather conflict information if we're only inserting. ([18b2298](https://github.com/wmfs/pg-telepods/commit/18b22985156a418176dc2c4973400299fe0a5cab))
+* Rewrite inverted where clause generation ([a1c436a](https://github.com/wmfs/pg-telepods/commit/a1c436a9a10a9833663b32a0239553238cf4008c))
+
+
+### 🛠 Builds
+
+* **deps-dev:** Bump semantic-release from 17.1.1 to 17.1.2 ([88e6cbc](https://github.com/wmfs/pg-telepods/commit/88e6cbcd325a1170b07cd9259b0e936b4885f663))
+
+
+### 🚨 Tests
+
+* extent tests to check conflict output too ([0c62f47](https://github.com/wmfs/pg-telepods/commit/0c62f47e0cb9923034e258e81f7c9f96b4c39a39))
+
+
+### 💎 Styles
+
+* Lint fixes. ([dbf13e1](https://github.com/wmfs/pg-telepods/commit/dbf13e1e71458df245641254adac60b5fa00ee55))
+
 # [1.79.0](https://github.com/wmfs/pg-telepods/compare/v1.78.0...v1.79.0) (2020-08-31)
 
 
