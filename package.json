@@ -28,7 +28,7 @@
     "make-dir": "3.1.0",
     "pg": "8.3.3",
     "pg-copy-streams": "2.2.2",
-    "pg-query-stream": "3.2.2",
+    "pg-query-stream": "3.2.3",
     "@wmfs/supercopy": "1.39.0"
   },
   "devDependencies": {
