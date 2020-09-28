@@ -1,3 +1,10 @@
+# [1.80.0](https://github.com/wmfs/pg-telepods/compare/v1.79.1...v1.80.0) (2020-09-28)
+
+
+### 🛠 Builds
+
+* **deps:** Bump debug from 4.1.1 to 4.2.0 ([3174b89](https://github.com/wmfs/pg-telepods/commit/3174b8999db7eceb1010ebc606a7353f5d67b9bc))
+
 ## [1.79.1](https://github.com/wmfs/pg-telepods/compare/v1.79.0...v1.79.1) (2020-09-25)
 
 
