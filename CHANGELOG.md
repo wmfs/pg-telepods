@@ -1,3 +1,11 @@
+# [1.81.0](https://github.com/wmfs/pg-telepods/compare/v1.80.0...v1.81.0) (2020-09-28)
+
+
+### 🛠 Builds
+
+* **deps:** Bump pg from 8.3.2 to 8.3.3 ([1153eda](https://github.com/wmfs/pg-telepods/commit/1153eda4332b80618a26a6780df0fed6099ee426))
+* **deps:** Bump pg-query-stream from 3.2.2 to 3.2.3 ([9011f2d](https://github.com/wmfs/pg-telepods/commit/9011f2de32d3fdf503902b4384ff1191216e7828))
+
 # [1.80.0](https://github.com/wmfs/pg-telepods/compare/v1.79.1...v1.80.0) (2020-09-28)
 
 
