@@ -1,3 +1,36 @@
+# [1.83.0](https://github.com/wmfs/pg-telepods/compare/v1.82.0...v1.83.0) (2021-01-05)
+
+
+### 🛠 Builds
+
+* **deps:** Bump debug from 4.2.0 to 4.3.1 ([a88d979](https://github.com/wmfs/pg-telepods/commit/a88d979862759ef8bf1ee40fc6b3a21d2bb446d7))
+* **deps-dev:** Bump codecov from 3.7.2 to 3.8.0 ([08d80fb](https://github.com/wmfs/pg-telepods/commit/08d80fb8dce5424a4cb97a9aac7a3c63f8edfccd))
+* **deps-dev:** Bump codecov from 3.8.0 to 3.8.1 ([aa8ae38](https://github.com/wmfs/pg-telepods/commit/aa8ae3876da694e86d65e236933e29dd424ced49))
+* **deps-dev:** Bump mocha from 8.1.3 to 8.2.0 ([846e379](https://github.com/wmfs/pg-telepods/commit/846e3791b2d15b665fe6cea4dc9f04e2afe5c12f))
+* **deps-dev:** Bump mocha from 8.2.0 to 8.2.1 ([841a7b0](https://github.com/wmfs/pg-telepods/commit/841a7b0da691145a53f5dc79c6ff9c0ec123afbe))
+* **deps-dev:** Bump semantic-release from 17.1.2 to 17.2.0 ([e23be35](https://github.com/wmfs/pg-telepods/commit/e23be35464927fadc80a6de8e1004d1538e04ca2))
+* **deps-dev:** Bump semantic-release from 17.2.0 to 17.2.1 ([e91949c](https://github.com/wmfs/pg-telepods/commit/e91949c534e33050dc63a4a1f628a94f0370a1e2))
+* **deps-dev:** Bump semantic-release from 17.2.1 to 17.2.2 ([a97de2d](https://github.com/wmfs/pg-telepods/commit/a97de2d8991ed16bb1acb011ec27e514c6b90a6f))
+* **deps-dev:** Bump semantic-release from 17.2.2 to 17.2.3 ([78bf7e7](https://github.com/wmfs/pg-telepods/commit/78bf7e7d114b80b4a482ed336d3dda7d7af248a1))
+* **deps-dev:** Bump semantic-release from 17.2.3 to 17.2.4 ([d8d7ca6](https://github.com/wmfs/pg-telepods/commit/d8d7ca6bb78defb8812832c79788976af60e8319))
+* **deps-dev:** Bump semantic-release from 17.2.4 to 17.3.0 ([05b89f4](https://github.com/wmfs/pg-telepods/commit/05b89f42cea5a20db90668e3baebf26c4936ae89))
+* **deps-dev:** Bump semantic-release from 17.3.0 to 17.3.1 ([614045f](https://github.com/wmfs/pg-telepods/commit/614045fabb041528df556065b642b8416f8ab385))
+* **deps-dev:** Bump standard from 14.3.4 to 15.0.0 ([d9ea9cb](https://github.com/wmfs/pg-telepods/commit/d9ea9cbfd9e146f3ccb98dcd3f56955609ed756a))
+* **deps-dev:** Bump standard from 15.0.0 to 15.0.1 ([6237eb7](https://github.com/wmfs/pg-telepods/commit/6237eb7e3edf58039efbb9db901cb345d34f4317))
+* **deps-dev:** Bump standard from 15.0.1 to 16.0.0 ([7f31b50](https://github.com/wmfs/pg-telepods/commit/7f31b507dc6510bed126fe0aef5405cff9a146b0))
+* **deps-dev:** Bump standard from 16.0.0 to 16.0.1 ([7f6fe85](https://github.com/wmfs/pg-telepods/commit/7f6fe8553e74e544e2080e5122dbbbac0b013a0d))
+* **deps-dev:** Bump standard from 16.0.1 to 16.0.2 ([158826c](https://github.com/wmfs/pg-telepods/commit/158826c57d138d61741d0e7133da032ec144c298))
+* **deps-dev:** Bump standard from 16.0.2 to 16.0.3 ([7b23c2c](https://github.com/wmfs/pg-telepods/commit/7b23c2c3cac16559d4a466d56f3c5f3e344a3d93))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** authenticate Docker image pull [ch2767] ([a020c85](https://github.com/wmfs/pg-telepods/commit/a020c858ff9c1f416d7d413410177897e41834e0))
+* **circle:** cache dependencies [ch2770] ([bc123a9](https://github.com/wmfs/pg-telepods/commit/bc123a93dc979ded786d64d49ada6a46255fcc48))
+* **circle:** separate linting job [ch1009] ([fe47006](https://github.com/wmfs/pg-telepods/commit/fe47006a5900d0d8d013ce30d2062045748151de))
+* **circle:** update build environment variable context name [ch2771] ([32bff2b](https://github.com/wmfs/pg-telepods/commit/32bff2b37e639743c103d83ade3a51baf1cc1187))
+* **circle:** use tmpfs postgres image [ch2769] ([9572183](https://github.com/wmfs/pg-telepods/commit/95721839df7e3ecc0b648b6b5f3ed3922b269bf2))
+
 # [1.82.0](https://github.com/wmfs/pg-telepods/compare/v1.81.0...v1.82.0) (2020-09-29)
 
 
