@@ -1,3 +1,11 @@
+# [1.84.0](https://github.com/wmfs/pg-telepods/compare/v1.83.0...v1.84.0) (2021-01-12)
+
+
+### 🛠 Builds
+
+* **deps:** Bump [@wmfs](https://github.com/wmfs)/supercopy from 1.40.0 to 1.41.0 ([c7b0188](https://github.com/wmfs/pg-telepods/commit/c7b0188cb7f2a64246808396d97a3d4ccea5f51a))
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.25.0 to 1.26.0 ([634ce67](https://github.com/wmfs/pg-telepods/commit/634ce67488ab61d0a58abe6c58926734b7ce53ff))
+
 # [1.83.0](https://github.com/wmfs/pg-telepods/compare/v1.82.0...v1.83.0) (2021-01-05)
 
 
