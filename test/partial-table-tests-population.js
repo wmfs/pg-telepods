@@ -14,13 +14,8 @@ function checkFileLength (outputDir, operation, filename, expectedLength) {
   const censusFile = path.resolve(outputDir, operation, filename)
   expect(fs.existsSync(censusFile)).to.equal(true)
 
-  const deletes = fs.readFileSync(censusFile, { encoding: 'utf-8' })
-  expect(deletes.split('\n').length).to.equal(expectedLength)
-}
-
-function fileNotExists (outputDir, operation, filename) {
-  const censusDeletes = path.resolve(outputDir, operation, filename)
-  expect(fs.existsSync(censusDeletes)).to.equal(false)
+  const lines = fs.readFileSync(censusFile, { encoding: 'utf-8' })
+  expect(lines.split('\n').length).to.equal(expectedLength)
 }
 
 describe('partial-table population',
@@ -127,7 +122,7 @@ describe('partial-table population',
       })
 
       it('check for conflicts csv', () => {
-        fileNotExists(firstSyncOutputDir, 'conflicts', 'census.csv')
+        checkFileLength(firstSyncOutputDir, 'conflicts', 'census.csv', 1)
       })
     })
 
