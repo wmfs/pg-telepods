@@ -1,3 +1,21 @@
+## [1.87.1](https://github.com/wmfs/pg-telepods/compare/v1.87.0...v1.87.1) (2021-01-24)
+
+
+### 🐛 Bug Fixes
+
+* Be less picky about when to create the conflicts file ([922f17c](https://github.com/wmfs/pg-telepods/commit/922f17cb5e45fa7d3d048cb1ab92b26e57703b0c))
+
+
+### 🛠 Builds
+
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.26.0 to 1.27.0 ([a0c5aa6](https://github.com/wmfs/pg-telepods/commit/a0c5aa668c0b067d6743b42863fed3fb279e296d))
+* **deps-dev:** Bump semantic-release from 17.3.1 to 17.3.2 ([ac78e2e](https://github.com/wmfs/pg-telepods/commit/ac78e2e76fff0b731932c69682600d0d426dab2c))
+* **deps-dev:** Bump semantic-release from 17.3.2 to 17.3.3 ([6da6543](https://github.com/wmfs/pg-telepods/commit/6da65432cfc47614c913b3d5797c8bfad5cdb986))
+* **deps-dev:** Bump semantic-release from 17.3.3 to 17.3.4 ([16c31ab](https://github.com/wmfs/pg-telepods/commit/16c31ab158a76fda56361d17bcf7393810f95182))
+* **deps-dev:** Bump semantic-release from 17.3.4 to 17.3.5 ([35404da](https://github.com/wmfs/pg-telepods/commit/35404da8c792401aa515e11c0a270d6535f40749))
+* **deps-dev:** Bump semantic-release from 17.3.5 to 17.3.6 ([e647202](https://github.com/wmfs/pg-telepods/commit/e64720236cf0b07de0d516c1a35b4c15a06f91d1))
+* **deps-dev:** Bump semantic-release from 17.3.6 to 17.3.7 ([0ed3ed5](https://github.com/wmfs/pg-telepods/commit/0ed3ed5acc9de5923bbc6a51976ca1e0fc1dc3b1))
+
 # [1.87.0](https://github.com/wmfs/pg-telepods/compare/v1.86.0...v1.87.0) (2021-01-12)
 
 
