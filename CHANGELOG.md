@@ -1,3 +1,14 @@
+# [1.88.0](https://github.com/wmfs/pg-telepods/compare/v1.87.1...v1.88.0) (2021-02-24)
+
+
+### 🛠 Builds
+
+* **deps:** Bump lodash from 4.17.20 to 4.17.21 ([4582b39](https://github.com/wmfs/pg-telepods/commit/4582b39ab08e10c231e431f267619f7df0af1bd5))
+* **deps-dev:** Bump chai from 4.2.0 to 4.3.0 ([473b180](https://github.com/wmfs/pg-telepods/commit/473b180e01dc3b6d59c9cfa1011ffb00041428bd))
+* **deps-dev:** Bump mocha from 8.2.1 to 8.3.0 ([8f179c8](https://github.com/wmfs/pg-telepods/commit/8f179c84e008659f4631ca5a8b8f34a11b42123e))
+* **deps-dev:** Bump semantic-release from 17.3.7 to 17.3.8 ([9a23a7d](https://github.com/wmfs/pg-telepods/commit/9a23a7dda70aa38786cdec123007920d5cd9b2af))
+* **deps-dev:** Bump semantic-release from 17.3.8 to 17.3.9 ([de3c1a5](https://github.com/wmfs/pg-telepods/commit/de3c1a5adf084d82135c177c03aedee5be9edc1a))
+
 ## [1.87.1](https://github.com/wmfs/pg-telepods/compare/v1.87.0...v1.87.1) (2021-01-24)
 
 
