@@ -1,3 +1,27 @@
+# [1.90.0](https://github.com/wmfs/pg-telepods/compare/v1.89.0...v1.90.0) (2021-05-26)
+
+
+### 🛠 Builds
+
+* **deps:** Bump [@wmfs](https://github.com/wmfs)/supercopy from 1.44.0 to 1.45.0 ([4474782](https://github.com/wmfs/pg-telepods/commit/4474782cdf2f3b94a4610d8e41f14dceea4027d9))
+* **deps-dev:** Bump chai from 4.3.0 to 4.3.1 ([9fede9d](https://github.com/wmfs/pg-telepods/commit/9fede9d862c3479313ccae9117cd088f5c6f613f))
+* **deps-dev:** Bump chai from 4.3.1 to 4.3.2 ([62b41a1](https://github.com/wmfs/pg-telepods/commit/62b41a131ec4e9d3eb29878b301e11efde586605))
+* **deps-dev:** Bump chai from 4.3.2 to 4.3.3 ([cc8f295](https://github.com/wmfs/pg-telepods/commit/cc8f295689c214e45def5ee99b4800c666969a74))
+* **deps-dev:** Bump chai from 4.3.3 to 4.3.4 ([109be40](https://github.com/wmfs/pg-telepods/commit/109be40ee867965f36c1059c49d17048cb3182ee))
+* **deps-dev:** Bump codecov from 3.8.1 to 3.8.2 ([6253f63](https://github.com/wmfs/pg-telepods/commit/6253f63fee9b0c747a583d32f3704acc1e92aa1d))
+* **deps-dev:** Bump mocha from 8.3.0 to 8.3.1 ([e4fefcc](https://github.com/wmfs/pg-telepods/commit/e4fefcc0f9df95322595af2b5b2754016339f368))
+* **deps-dev:** Bump mocha from 8.3.1 to 8.3.2 ([0e18a72](https://github.com/wmfs/pg-telepods/commit/0e18a72f1342f9ba623ffcbab761caa2954be2e3))
+* **deps-dev:** Bump mocha from 8.3.2 to 8.4.0 ([e6c2097](https://github.com/wmfs/pg-telepods/commit/e6c20970d026abe78a04065f254c568d0a38e51c))
+* **deps-dev:** Bump semantic-release from 17.3.9 to 17.4.0 ([ba50c21](https://github.com/wmfs/pg-telepods/commit/ba50c21eb9e59b8a825ebbac7851abb61752b5ee))
+* **deps-dev:** Bump semantic-release from 17.4.0 to 17.4.1 ([40f86b5](https://github.com/wmfs/pg-telepods/commit/40f86b5940a6f75ad9e4c120c4b038187461716e))
+* **deps-dev:** Bump semantic-release from 17.4.1 to 17.4.2 ([3b59768](https://github.com/wmfs/pg-telepods/commit/3b597681510ec102c078c3afa8577fbfda6101fe))
+* **deps-dev:** Bump semantic-release from 17.4.2 to 17.4.3 ([fb7c9a0](https://github.com/wmfs/pg-telepods/commit/fb7c9a022d2d4870de63b75f8fd470496c8b7848))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** update postgres config to 13.2 ([51eadca](https://github.com/wmfs/pg-telepods/commit/51eadcac184f4ec097b703a5a8c4e59edcf1ff11))
+
 # [1.89.0](https://github.com/wmfs/pg-telepods/compare/v1.88.0...v1.89.0) (2021-02-24)
 
 
