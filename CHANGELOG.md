@@ -1,3 +1,10 @@
+# [1.93.0](https://github.com/wmfs/pg-telepods/compare/v1.92.0...v1.93.0) (2022-01-25)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency camelcase-keys to v7 ([419e52d](https://github.com/wmfs/pg-telepods/commit/419e52d8ffe9d8d3c5f9058d82c8530da8499591))
+
 # [1.92.0](https://github.com/wmfs/pg-telepods/compare/v1.91.0...v1.92.0) (2022-01-25)
 
 
