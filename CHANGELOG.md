@@ -1,3 +1,40 @@
+# [1.92.0](https://github.com/wmfs/pg-telepods/compare/v1.91.0...v1.92.0) (2022-01-25)
+
+
+### 🛠 Builds
+
+* **deps-dev:** Bump [@wmfs](https://github.com/wmfs)/hl-pg-client from 1.27.0 to 1.28.0 ([3126984](https://github.com/wmfs/pg-telepods/commit/3126984ef3bb2437fc630f8fc4bcbe9b7ae71f99))
+* **deps-dev:** Bump codecov from 3.8.2 to 3.8.3 ([9f65805](https://github.com/wmfs/pg-telepods/commit/9f6580586fe2603d1ca3de8ea225da48e83575a5))
+* **deps-dev:** Bump mocha from 9.0.2 to 9.0.3 ([a3bee86](https://github.com/wmfs/pg-telepods/commit/a3bee86d1e9f105b0ad93d4337a8b8a5ea30f127))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6 ([7070e3b](https://github.com/wmfs/pg-telepods/commit/7070e3b28ee5929c1e984149c2df30f966828fda))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/git to v10 ([0c5ef66](https://github.com/wmfs/pg-telepods/commit/0c5ef6644fb329bf84f67a849436e5380b2cd3aa))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/git to v9.0.1 ([9559c8a](https://github.com/wmfs/pg-telepods/commit/9559c8ab9df0d765ce27f0f7bd1f69fcabffd91f))
+* **deps-dev:** update dependency mocha to v9.1.0 ([af88be5](https://github.com/wmfs/pg-telepods/commit/af88be5185b26ddd11d7307a2837292e6a9fdf33))
+* **deps-dev:** update dependency mocha to v9.1.1 ([990e41a](https://github.com/wmfs/pg-telepods/commit/990e41a2db7051d5c49efd5ccc9051c4766627a5))
+* **deps-dev:** update dependency mocha to v9.1.2 ([a2d850f](https://github.com/wmfs/pg-telepods/commit/a2d850f3686768f5514f9eb15f4b536e63fd9818))
+* **deps-dev:** update dependency mocha to v9.1.3 ([91aa541](https://github.com/wmfs/pg-telepods/commit/91aa5416874a7d9c7072f721b1dc4c4b075b3db4))
+* **deps-dev:** update dependency mocha to v9.1.4 ([245cd01](https://github.com/wmfs/pg-telepods/commit/245cd01965175692433632fca0bc6b93e8b10fe0))
+* **deps-dev:** update dependency mocha to v9.2.0 ([07db426](https://github.com/wmfs/pg-telepods/commit/07db426eb45792df3dabe08c0501f261f8a3d866))
+* **deps-dev:** update dependency semantic-release to v17.4.5 ([99d9a0b](https://github.com/wmfs/pg-telepods/commit/99d9a0b8645b6c98438dc24cd4ebee9432dc387b))
+* **deps-dev:** update dependency semantic-release to v17.4.6 ([5cc79ea](https://github.com/wmfs/pg-telepods/commit/5cc79ea69d5f1e0146a033f949f3df76329d7860))
+* **deps-dev:** update dependency semantic-release to v17.4.7 ([4fcdb51](https://github.com/wmfs/pg-telepods/commit/4fcdb51dfd8d64e8c121ea76ba789f3bf5f9c1aa))
+* **deps-dev:** update dependency semantic-release to v18 ([8eb386f](https://github.com/wmfs/pg-telepods/commit/8eb386fe48d3310cacc1bb095762336aa39c9091))
+* **deps-dev:** update dependency semantic-release to v18.0.1 ([d613ac7](https://github.com/wmfs/pg-telepods/commit/d613ac7facc07ff0d16350e26c7c853513ee83cb))
+* **deps-dev:** update dependency semantic-release to v19 ([616770e](https://github.com/wmfs/pg-telepods/commit/616770ecc85663a8a3951ceccd1dd2f0d431ebd5))
+* **deps-dev:** update dependency standard to v16.0.4 ([099ec00](https://github.com/wmfs/pg-telepods/commit/099ec009c2fa0cff78a5b4222ad11a90bbb54a45))
+* **deps-dev:** update semantic-release monorepo ([09f98a8](https://github.com/wmfs/pg-telepods/commit/09f98a8225ae03680fea891db70123f35bc2c638))
+* **deps:** update dependency [@wmfs](https://github.com/wmfs)/supercopy to v1.46.0 ([8aa244b](https://github.com/wmfs/pg-telepods/commit/8aa244bbc1c7b8ee313d07430fbfc42a7afa07b1))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** CircleCI update next gen PostgreSQL image [sc-11442] ([4357a76](https://github.com/wmfs/pg-telepods/commit/4357a76c33e9ad8a0892da892e6ba2c4989407f2))
+
+
+### ♻️ Chores
+
+* add renovate config [ch6600] ([1b8228d](https://github.com/wmfs/pg-telepods/commit/1b8228dd289a77316d9f0654e8c6527d0739e8e4))
+
 # [1.91.0](https://github.com/wmfs/pg-telepods/compare/v1.90.0...v1.91.0) (2021-07-09)
 
 
