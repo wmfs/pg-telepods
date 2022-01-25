@@ -1,3 +1,10 @@
+# [1.94.0](https://github.com/wmfs/pg-telepods/compare/v1.93.0...v1.94.0) (2022-01-25)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency debug to v4.3.3 ([586fa76](https://github.com/wmfs/pg-telepods/commit/586fa76c67a4cc2d5ec556ff91b73b335aa432b1))
+
 # [1.93.0](https://github.com/wmfs/pg-telepods/compare/v1.92.0...v1.93.0) (2022-01-25)
 
 
