@@ -1,3 +1,12 @@
+# [1.95.0](https://github.com/wmfs/pg-telepods/compare/v1.94.0...v1.95.0) (2022-01-26)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/hl-pg-client to v1.29.0 ([a2d997e](https://github.com/wmfs/pg-telepods/commit/a2d997e0e54482566c6b9fde9ca8f6e0d85b5566))
+* **deps-dev:** update dependency chai to v4.3.5 ([538a409](https://github.com/wmfs/pg-telepods/commit/538a409787ce241aa96523c258485e783141bf12))
+* **deps:** update dependency [@wmfs](https://github.com/wmfs)/supercopy to v1.47.0 ([be6f1e0](https://github.com/wmfs/pg-telepods/commit/be6f1e0c6e88295bea208008d0a62b12e0b1c4f6))
+
 # [1.94.0](https://github.com/wmfs/pg-telepods/compare/v1.93.0...v1.94.0) (2022-01-25)
 
 
