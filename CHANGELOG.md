@@ -1,3 +1,18 @@
+# [1.96.0](https://github.com/wmfs/pg-telepods/compare/v1.95.0...v1.96.0) (2022-10-17)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency chai to v4.3.6 ([892aa96](https://github.com/wmfs/pg-telepods/commit/892aa96334f78ef875f7d21dabf9c6f8b0436bb8))
+* **deps-dev:** update dependency mocha to v10 ([dc43eb7](https://github.com/wmfs/pg-telepods/commit/dc43eb732fa30cae2fdb134aceffef831342bf64))
+* **deps-dev:** update dependency mocha to v10.1.0 ([a5f7b5f](https://github.com/wmfs/pg-telepods/commit/a5f7b5f725ac29cf1d3aedb073649bc5a7ef0b0b))
+* **deps-dev:** update dependency mocha to v9.2.1 ([2c50c1d](https://github.com/wmfs/pg-telepods/commit/2c50c1d43776dbc3614a0d2a0d646792ad774494))
+* **deps-dev:** update dependency mocha to v9.2.2 ([f99f242](https://github.com/wmfs/pg-telepods/commit/f99f2422e6d4dd35e2c5382737727122e7ace698))
+* **deps-dev:** update dependency semantic-release to v19.0.3 ([4642dd7](https://github.com/wmfs/pg-telepods/commit/4642dd73f31fa5ed85f3f1b3a0f0f0bd9cbfae65))
+* **deps-dev:** update dependency semantic-release to v19.0.5 ([9ce6206](https://github.com/wmfs/pg-telepods/commit/9ce620630d620985bc7a6b98a343bdcd2b1dfedb))
+* **deps-dev:** update dependency standard to v17 ([b3e62c5](https://github.com/wmfs/pg-telepods/commit/b3e62c5889efc74520cd2499ac5b6ae05e5fdf61))
+* **deps:** update dependency pg to v8.8.0 ([cff7b11](https://github.com/wmfs/pg-telepods/commit/cff7b11ddbc49382943a366d2e243fc0e8f6365a))
+
 # [1.95.0](https://github.com/wmfs/pg-telepods/compare/v1.94.0...v1.95.0) (2022-01-26)
 
 
