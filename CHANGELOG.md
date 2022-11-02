@@ -1,3 +1,11 @@
+# [1.102.0](https://github.com/wmfs/pg-telepods/compare/v1.101.0...v1.102.0) (2022-11-02)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency [@wmfs](https://github.com/wmfs)/supercopy to v1.50.0 ([5e9d04f](https://github.com/wmfs/pg-telepods/commit/5e9d04f1d65a4e9e8113bdf23845ce578eae5270))
+* **deps:** update dependency pg-copy-streams to v6 ([5f5c987](https://github.com/wmfs/pg-telepods/commit/5f5c98761f4ffa08f51ef425bb9176b3f78d641e))
+
 # [1.101.0](https://github.com/wmfs/pg-telepods/compare/v1.100.0...v1.101.0) (2022-11-02)
 
 
