@@ -1,3 +1,10 @@
+# [1.98.0](https://github.com/wmfs/pg-telepods/compare/v1.97.0...v1.98.0) (2022-11-02)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency [@wmfs](https://github.com/wmfs)/supercopy to v1.48.0 ([fa8591b](https://github.com/wmfs/pg-telepods/commit/fa8591b5f66d101bc1fb96563f868171e31bb397))
+
 # [1.97.0](https://github.com/wmfs/pg-telepods/compare/v1.96.0...v1.97.0) (2022-11-01)
 
 
