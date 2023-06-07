@@ -47,7 +47,7 @@ describe('partial-table population',
     describe('sync first table to populate target', () => {
       it('start the telepods', async () => {
         const result = await startTelepods({
-          client: client,
+          client,
           outputDir: firstSyncOutputDir,
           source: {
             tableName: 'springfield.people',

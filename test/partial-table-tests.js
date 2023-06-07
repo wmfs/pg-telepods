@@ -47,7 +47,7 @@ describe('partial-table test',
     describe('sync first table', () => {
       it('start the telepods', async () => {
         const result = await startTelepods({
-          client: client,
+          client,
           outputDir: firstSyncOutputDir,
           source: {
             tableName: 'springfield.people',
@@ -147,7 +147,7 @@ describe('partial-table test',
     describe('sync second table', () => {
       it('start the telepods', async () => {
         const result = await startTelepods({
-          client: client,
+          client,
           outputDir: secondSyncOutputDir,
           source: {
             tableName: 'worldof.tomorrow',
@@ -257,7 +257,7 @@ describe('partial-table test',
 
       it('start the telepods', async () => {
         const result = await startTelepods({
-          client: client,
+          client,
           outputDir: thirdSyncOutputDir,
           source: {
             tableName: 'worldof.tomorrow',
@@ -308,7 +308,7 @@ describe('partial-table test',
 
       it('start the telepods', async () => {
         const result = await startTelepods({
-          client: client,
+          client,
           outputDir: fourthSyncOutputDir,
           source: {
             tableName: 'worldof.tomorrow',
@@ -359,7 +359,7 @@ describe('partial-table test',
 
       it('start the telepods', async () => {
         const result = await startTelepods({
-          client: client,
+          client,
           outputDir: fifthSyncOutputDir,
           source: {
             tableName: 'worldof.tomorrow',
