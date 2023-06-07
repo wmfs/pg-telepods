@@ -34,7 +34,7 @@ describe('whole-table test',
 
     it('start the telepods', async () => {
       const result = await startTelepods({
-        client: client,
+        client,
         outputDir: firstSyncOutputDir,
         source: {
           tableName: 'springfield.people',
