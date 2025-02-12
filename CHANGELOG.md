@@ -1,3 +1,15 @@
+## [1.111.0](https://github.com/wmfs/pg-telepods/compare/v1.110.0...v1.111.0) (2025-02-12)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** [sc-29160] Resolve issue with semantic-release changelog notes ([#522](https://github.com/wmfs/pg-telepods/issues/522)) ([1996c42](https://github.com/wmfs/pg-telepods/commit/1996c422ecb0ef3b43d0ed0f158a0583809dc7df))
+* **deps-dev:** update dependency @wmfs/hl-pg-client to v1.34.0 ([#520](https://github.com/wmfs/pg-telepods/issues/520)) ([e857a0d](https://github.com/wmfs/pg-telepods/commit/e857a0dd1cb14b1b9c32382b11699f82e84d680e))
+* **deps-dev:** update dependency mocha to v11.1.0 ([#523](https://github.com/wmfs/pg-telepods/issues/523)) ([580de2f](https://github.com/wmfs/pg-telepods/commit/580de2ff2c1aa77fb4a793490acf54b30ca27c7a))
+* **deps-dev:** update dependency semantic-release to v24.2.1 ([#521](https://github.com/wmfs/pg-telepods/issues/521)) ([1192274](https://github.com/wmfs/pg-telepods/commit/11922746c1df181c9919d307dabff64e2d52752e))
+* **deps-dev:** update dependency semantic-release to v24.2.2 ([#524](https://github.com/wmfs/pg-telepods/issues/524)) ([58e1927](https://github.com/wmfs/pg-telepods/commit/58e1927d83dee4f9edd61e33935aa10c18b7ce61))
+* **deps:** update dependency pg to v8.13.2 ([#525](https://github.com/wmfs/pg-telepods/issues/525)) ([1c4eea0](https://github.com/wmfs/pg-telepods/commit/1c4eea026c401aa6e9439ae4433c6483fa5a2935))
+* **deps:** update dependency pg-query-stream to v4.7.2 ([#526](https://github.com/wmfs/pg-telepods/issues/526)) ([c87b46d](https://github.com/wmfs/pg-telepods/commit/c87b46d64544978595c062c1fcd5ccb609032458))
+
 # [1.110.0](https://github.com/wmfs/pg-telepods/compare/v1.109.0...v1.110.0) (2024-12-09)
 
 # [1.109.0](https://github.com/wmfs/pg-telepods/compare/v1.108.0...v1.109.0) (2024-12-09)
