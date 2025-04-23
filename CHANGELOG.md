@@ -1,3 +1,9 @@
+## [1.116.0](https://github.com/wmfs/pg-telepods/compare/v1.115.0...v1.116.0) (2025-04-23)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency pg-query-stream to v4.9.1 ([#539](https://github.com/wmfs/pg-telepods/issues/539)) ([9fea5c7](https://github.com/wmfs/pg-telepods/commit/9fea5c765e8cc77147f44506ee60f42aa1ea051e))
+
 ## [1.115.0](https://github.com/wmfs/pg-telepods/compare/v1.114.0...v1.115.0) (2025-04-23)
 
 ### Build system dependencies :hammer:
