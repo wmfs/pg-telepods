@@ -1,3 +1,11 @@
+## [1.118.0](https://github.com/wmfs/pg-telepods/compare/v1.117.0...v1.118.0) (2025-04-28)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency @wmfs/hl-pg-client to v1.40.0 ([#543](https://github.com/wmfs/pg-telepods/issues/543)) ([89c9a4e](https://github.com/wmfs/pg-telepods/commit/89c9a4e2874bc0044e6fbee767b404d15cddd229))
+* **deps:** update dependency pg to v8.15.6 ([#544](https://github.com/wmfs/pg-telepods/issues/544)) ([cc9f444](https://github.com/wmfs/pg-telepods/commit/cc9f4444569d935a805fa1e23d145de6b1207838))
+* **deps:** update dependency pg-query-stream to v4.9.6 ([#545](https://github.com/wmfs/pg-telepods/issues/545)) ([233d30e](https://github.com/wmfs/pg-telepods/commit/233d30e082e6a7200ca3e33dad7dfbc6dd2c4544))
+
 ## [1.117.0](https://github.com/wmfs/pg-telepods/compare/v1.116.0...v1.117.0) (2025-04-25)
 
 ### Build system dependencies :hammer:
