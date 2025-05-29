@@ -1,3 +1,9 @@
+## [1.123.0](https://github.com/wmfs/pg-telepods/compare/v1.122.0...v1.123.0) (2025-05-29)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency @wmfs/supercopy to v1.55.0 ([#561](https://github.com/wmfs/pg-telepods/issues/561)) ([781b1ad](https://github.com/wmfs/pg-telepods/commit/781b1ad9aba083d977128ccbb91156f1f9244b62))
+
 ## [1.122.0](https://github.com/wmfs/pg-telepods/compare/v1.121.0...v1.122.0) (2025-05-28)
 
 ### Build system dependencies :hammer:
