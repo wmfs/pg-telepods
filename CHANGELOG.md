@@ -1,3 +1,12 @@
+## [1.124.0](https://github.com/wmfs/pg-telepods/compare/v1.123.0...v1.124.0) (2025-06-20)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency mocha to v11.6.0 ([#562](https://github.com/wmfs/pg-telepods/issues/562)) ([3f659eb](https://github.com/wmfs/pg-telepods/commit/3f659ebb54637ad4c9d20e54c8daedfcadf3c55f))
+* **deps-dev:** update dependency mocha to v11.7.0 ([#563](https://github.com/wmfs/pg-telepods/issues/563)) ([8e7f9e3](https://github.com/wmfs/pg-telepods/commit/8e7f9e3ee797d032fc06b82d4313667ba5d2e706))
+* **deps:** update dependency pg to v8.16.2 ([#564](https://github.com/wmfs/pg-telepods/issues/564)) ([cbb64ec](https://github.com/wmfs/pg-telepods/commit/cbb64ec831538ae518e9826e60be4d996c90f888))
+* **deps:** update dependency pg-query-stream to v4.10.2 ([#565](https://github.com/wmfs/pg-telepods/issues/565)) ([86122c5](https://github.com/wmfs/pg-telepods/commit/86122c53c6df86af73dba7910371806f9ae1970c))
+
 ## [1.123.0](https://github.com/wmfs/pg-telepods/compare/v1.122.0...v1.123.0) (2025-05-29)
 
 ### Build system dependencies :hammer:
