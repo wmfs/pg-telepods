@@ -1,3 +1,5 @@
+## [1.126.1](https://github.com/wmfs/pg-telepods/compare/v1.126.0...v1.126.1) (2026-08-13)
+
 ## [1.126.0](https://github.com/wmfs/pg-telepods/compare/v1.125.0...v1.126.0) (2025-10-21)
 
 ### Build system dependencies :hammer:
