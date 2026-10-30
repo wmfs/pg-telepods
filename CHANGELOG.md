@@ -1,3 +1,22 @@
+## [1.127.0](https://github.com/wmfs/pg-telepods/compare/v1.126.1...v1.127.0) (2026-10-30)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** fix conventionalcommit versions [sc-34125] ([8b588e8](https://github.com/wmfs/pg-telepods/commit/8b588e8f0b4733f27c42ae54eb567d87de302707))
+* **deps-dev:** update dependency @wmfs/hl-pg-client to v1.46.1 ([#617](https://github.com/wmfs/pg-telepods/issues/617)) ([83b13eb](https://github.com/wmfs/pg-telepods/commit/83b13ebddb952e6b509dc022aac0f787cbd662a8))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v10.4.0 ([#618](https://github.com/wmfs/pg-telepods/issues/618)) ([2fd2f37](https://github.com/wmfs/pg-telepods/commit/2fd2f37c0078ff67edbe2ef27c8dddaf2cac525c))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v10.4.1 ([#623](https://github.com/wmfs/pg-telepods/issues/623)) ([e78892b](https://github.com/wmfs/pg-telepods/commit/e78892b47763f79fd25006c27e4e8b74f6baefd9))
+* **deps-dev:** update dependency mocha to v12 ([#619](https://github.com/wmfs/pg-telepods/issues/619)) ([a7cf84c](https://github.com/wmfs/pg-telepods/commit/a7cf84c9d7b802f8fe59b7591fccc685121df8eb))
+* **deps-dev:** update dependency mocha to v12.0.1 ([#620](https://github.com/wmfs/pg-telepods/issues/620)) ([25e6b9c](https://github.com/wmfs/pg-telepods/commit/25e6b9ce65561ff16d1402a633069b96714e720e))
+* **deps-dev:** update dependency mocha to v12.0.2 ([#621](https://github.com/wmfs/pg-telepods/issues/621)) ([e0a030c](https://github.com/wmfs/pg-telepods/commit/e0a030c23c993a72a7b75a3ecc1b447b6fa01d36))
+* **deps-dev:** update dependency mocha to v12.0.3 ([#622](https://github.com/wmfs/pg-telepods/issues/622)) ([7fed08d](https://github.com/wmfs/pg-telepods/commit/7fed08d20aadb6b6494f5456b79440e7d3e3efdd))
+* **deps:** update dependency lodash to v4.18.1 [security] ([#595](https://github.com/wmfs/pg-telepods/issues/595)) ([d7b26e0](https://github.com/wmfs/pg-telepods/commit/d7b26e0174a5e2b01915234360c6a7494e730c2e))
+
+### CICD Configuration Changes :construction_worker:
+
+* use github-app-token orb for release token [sc-34101] ([#625](https://github.com/wmfs/pg-telepods/issues/625)) ([2b68613](https://github.com/wmfs/pg-telepods/commit/2b68613e5ad3b7d2d9691adf775f6b022f8cbc22))
+* use shared renovate preset [sc-34117] ([#624](https://github.com/wmfs/pg-telepods/issues/624)) ([c2fa14c](https://github.com/wmfs/pg-telepods/commit/c2fa14cae47655c00d60bd5c4d8dc94b5dd2511d))
+
 ## [1.126.1](https://github.com/wmfs/pg-telepods/compare/v1.126.0...v1.126.1) (2026-08-13)
 
 ## [1.126.0](https://github.com/wmfs/pg-telepods/compare/v1.125.0...v1.126.0) (2025-10-21)
