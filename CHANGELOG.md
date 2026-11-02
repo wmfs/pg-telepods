@@ -1,3 +1,9 @@
+## [1.130.0](https://github.com/wmfs/pg-telepods/compare/v1.129.0...v1.130.0) (2026-11-02)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency pg to v8.23.1 ([#591](https://github.com/wmfs/pg-telepods/issues/591)) ([76abdb9](https://github.com/wmfs/pg-telepods/commit/76abdb978e58542bc4bbd0a34c9b03597cd267c7))
+
 ## [1.129.0](https://github.com/wmfs/pg-telepods/compare/v1.128.0...v1.129.0) (2026-11-02)
 
 ### Build system dependencies :hammer:
