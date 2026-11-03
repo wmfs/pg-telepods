@@ -29,7 +29,7 @@
     "pg": "8.23.1",
     "pg-copy-streams": "7.0.0",
     "pg-query-stream": "4.17.1",
-    "@wmfs/supercopy": "1.57.0"
+    "@wmfs/supercopy": "1.59.0"
   },
   "devDependencies": {
     "chai": "4.5.0",
@@ -43,7 +43,7 @@
     "@semantic-release/changelog": "7.0.0",
     "@semantic-release/release-notes-generator": "14.1.1",
     "@semantic-release/git": "11.0.1",
-    "@wmfs/hl-pg-client": "1.46.1"
+    "@wmfs/hl-pg-client": "1.48.0"
   },
   "scripts": {
     "lint": "standard",
