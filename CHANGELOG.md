@@ -1,3 +1,13 @@
+## [1.130.1](https://github.com/wmfs/pg-telepods/compare/v1.130.0...v1.130.1) (2026-11-06)
+
+### Bug Fix(es) :bug:
+
+* replace make-dir with fs.promises.mkdir ([#628](https://github.com/wmfs/pg-telepods/issues/628)) ([d4ea247](https://github.com/wmfs/pg-telepods/commit/d4ea247642ba98c5e3d9bd579bceb208dbb353aa))
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update [@wmfs](https://github.com/wmfs) packages ([#627](https://github.com/wmfs/pg-telepods/issues/627)) ([7fedfd0](https://github.com/wmfs/pg-telepods/commit/7fedfd0e4527e8e29d639f4acd7347b9fb7996f5))
+
 ## [1.130.0](https://github.com/wmfs/pg-telepods/compare/v1.129.0...v1.130.0) (2026-11-02)
 
 ### Build system dependencies :hammer:
