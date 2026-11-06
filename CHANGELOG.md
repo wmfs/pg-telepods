@@ -1,3 +1,9 @@
+## [1.130.2](https://github.com/wmfs/pg-telepods/compare/v1.130.1...v1.130.2) (2026-11-06)
+
+### Bug Fix(es) :bug:
+
+* replace camelcase-keys with lodash camelCase ([#629](https://github.com/wmfs/pg-telepods/issues/629)) ([52d7dff](https://github.com/wmfs/pg-telepods/commit/52d7dfffd93b885d4bfc6de5f609b0ed9e1419b7))
+
 ## [1.130.1](https://github.com/wmfs/pg-telepods/compare/v1.130.0...v1.130.1) (2026-11-06)
 
 ### Bug Fix(es) :bug:
