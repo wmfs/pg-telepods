@@ -61,6 +61,29 @@ startTelepods(
 )
 ```
 
+### Soft delete
+
+By default, rows in the target (within `target.where`) that are no longer in the source are deleted.
+Set `target.softDelete` to keep them and set some columns instead:
+
+```javascript
+target: {
+  tableName: 'wmfs.gazetteer',
+  hashSumColumnName: 'origin_hash_sum',
+  where: { data_source: { equals: 'OrdnanceSurvey' } },
+  softDelete: {
+    removed_from_supply_at: '$now', // the time of this run
+    origin_hash_sum: null
+  }
+}
+```
+
+* Missing rows are written to `updates/` instead of `deletes/`, and only the listed columns are changed.
+* `'$now'` is replaced with the run's timestamp (`options.runTimestamp`, defaulting to the current time).
+* Rows that already have the soft delete values are skipped (a `'$now'` column counts as set when it is not null), so repeat runs don't rewrite them and they keep the time they were first marked.
+* Clearing the hash column (`origin_hash_sum: null`) means a row that comes back into the source is treated as changed and upserted. If the transform function returns the soft delete columns as `null`, that upsert also clears the mark.
+* Values can be `null`, a string, a number, a boolean or `'$now'`. Column names must be plain lower-case identifiers.
+
 ## <a name="test"></a>Testing
 
 Before running these tests, you'll need a test PostgreSQL database available and set a `PG_CONNECTION_STRING` environment variable to point to it, for example:
